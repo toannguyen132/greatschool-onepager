@@ -1,0 +1,394 @@
+/* ------- global ------- */
+html {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+body{
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+h1{
+  font-family: $font-heading;
+}
+
+h2, h3, h4{
+  font-family: "Roboto", serif;
+}
+
+/* ----- header ------ */
+header{
+  padding: $default-padding 0;
+}
+
+.header-search{
+  #logo{
+    @media screen and (min-width: $screen-md-min){
+      float: left;
+    }
+  }
+  &.header-desktop{
+    float: right;
+  }
+
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.search-box{
+  display: inline-block;
+  vertical-align: middle;
+
+  > div{
+    display: inline-block;
+    height: 50px;
+    vertical-align: top;
+  }
+  .cat{
+    background-image: linear-gradient(-180deg, #FFFFFF 50%, #F3F9FA 100%);
+    padding: $default-padding $default-padding*3 $default-padding $default-padding;
+    position: relative;
+    border: 1px solid #C1D2D9;
+    border-radius: 2px 0 0 2px;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: $text-bold;
+    [class*="icon-"]{
+      position: absolute;
+      right: 15px;
+      top: $default-padding;
+      line-height: 2rem;
+    }
+  }
+  .inp{
+    border-top: 1px solid #C1D2D9;
+    border-bottom: 1px solid #C1D2D9;
+    min-width: 300px;
+
+    input{
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: $default-padding;
+      border: none;
+    }
+  }
+  .submit{
+    background-color: $primary;
+    color: #fff;
+    padding: $default-padding 20px;
+    border-radius: 2px;
+  }
+
+}
+
+.header-nav{
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: $dark-primary;
+  display: inline-block;
+  ul{
+    list-style: none;
+    list-style-image: none;
+    list-style-position: outside;
+    li{
+      display: inline-block;
+      padding-left: $default-padding;
+      padding-right: $default-padding;
+      border-right: 1px solid #D1DFE5;
+      &:last-child{
+        border-right: transparent;
+        padding-right: 0;
+      }
+      &.user a{
+        color: #697841;
+      }
+      a{
+        display: block;
+        color: $dark-primary;
+        font-weight: $text-bold;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.unhl{
+  color: $unhighlight;
+}
+
+.header-trending-topic{
+  font-size: 1.2rem;
+  margin-top: $default-padding;
+  padding-left: 15px;
+  .labl{
+    margin-right: 20px;
+  }
+  .topic-item{
+    margin-left: $default-padding;
+    margin-right: $default-padding;
+  }
+}
+
+/* ----- summary ----- */
+.school-header{
+  background-image: url("../img/header-bg.png");
+  background-size: cover;
+  color: #fff;
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.breakcrumb{
+  padding: 10px 0;
+  .bc-item{
+    color: #fff;
+    font-size: 1.2rem;
+    &:first-child{
+      padding-left: 0;
+    }
+  }
+  .sep{
+    padding-left: 15px;
+    padding-right: 15px;
+    opacity: 0.33;
+    color: #fff;
+    vertical-align: middle;
+  }
+  span.bc-item{
+    color: #9CAAB6;
+  }
+}
+
+.school-header{
+  .school-info{
+    padding-bottom: 15px;
+    .school-name{
+      font-size: 3.6rem;
+      padding-top: 60px;
+    }
+    .detail-info{
+      font-size: 1.2rem;
+    }
+    .statistic{
+      padding-top: 40px;
+
+    }
+  }
+}
+
+.school-header{
+  .detail-info{
+    > span{
+      display: inline-block;
+    }
+    .loc{
+      .icon-location{
+        font-size: 1.2em;
+      }
+      @media screen and (min-width: $screen-md-min){
+        margin-right: 30px;
+      }
+    }
+
+    .phone{
+      background-color: rgba(0,0,0, 0.24);
+      border-radius: 30px;
+      padding: 5px 10px;
+    }
+    .link-round{
+      background-color: rgba(0,0,0, 0.24);
+      height: 27px;
+      width: 27px;
+      line-height: 27px;
+      vertical-align: middle;
+      text-align: center;
+      border-radius: 30px;
+    }
+    .more-detail{
+      margin-left: 30px;
+      a{ color: #fff; }
+    }
+  }
+}
+
+.school-header{
+  .statistic{
+    .score-number{
+      display: inline-block;
+      color: #fff;
+      font-size: 3.8rem;
+      line-height: 62px;
+      font-weight: $text-bold;
+      width: 62px;
+      height: 62px;
+      text-align: center;
+      border-radius: 38px;
+      background-color: $green;
+      vertical-align: middle;
+    }
+    .score{
+      &.stat-item{
+        text-align: left;
+      }
+      .lbl{
+        margin-left: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        font-weight: $text-bold;
+      }
+
+      .round-icon{
+        background: rgba(0,0,0,0.24);
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        font-size: 0.7em;
+      }
+    }
+
+    .stars{
+      .star-bg{
+        color: #fff;
+        opacity: 0.4;
+      }
+      .star-rate{
+
+      }
+    }
+
+    .stat-sep{
+      width: 1px;
+      height: 42px;
+      background-color: #fff;
+      opacity: 0.2;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .stat-item{
+      display: inline-block;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 40px;
+      padding-right: 40px;
+      vertical-align: middle;
+      text-align: center;
+      &:first-child{
+        padding-left: 0;
+      }
+      .big{
+        font-size: 2.2rem;
+        font-weight: $text-bold;
+        vertical-align: middle;
+        text-transform: uppercase;
+      }
+      .stat-lbl{
+        text-transform: uppercase;
+        font-weight: $text-bold;
+        color: rgba(255,255,255,0.5);
+        font-size: 1.2rem;
+        margin-bottom: 2px;
+      }
+    }
+
+    .stat-stars{
+      .stars{
+        margin-top: 7px;
+      }
+    }
+  }
+}
+
+.round-icon{
+  border-radius: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/** start rate **/
+.stars{
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  &:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .star-bg, .star-rate{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    .icon-star{
+      display: inline-block;
+    }
+  }
+  .star-bg{
+    position: relative;
+    color: #fff;
+  }
+  .star-rate{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $yellow;
+  }
+}
+
+/** ---------- SECTIONS ----------- **/
+section.sec-colored{
+  background-color: #F8FBFB;
+}
+section.sec-white{
+  background-color: #fff;
+}
+.section-title{
+  font-size: 2.6rem;
+  color: $heading-color;
+}
+
+/** --------- SCHOOL SUMMARY --------- **/
+.school-summary{
+  padding: 30px 0;
+
+  .summary-box{
+    .sum-line{
+      line-height: 25px;
+      color: $primary;
+      font-weight: $text-bold;
+    }
+    .circle-number{
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      background-color: #5F9622;
+      color: #fff;
+    }
+    .circle-number, .circle-icon{
+      margin: 5px 5px 5px 0;
+    }
+    .circle-icon{
+      font-size: 25px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+}
+
+.summary-box{
+  background: #F6F9FA;
+  border: 1px solid #DBE6EB;
+  border-radius: 1px;
+  padding: 30px;
+}

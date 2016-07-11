@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  src: url('../fonts/open-sans/OpenSansRegular.eot');
+  src: url('../fonts/open-sans/OpenSansRegular.eot') format('embedded-opentype'),
+  url('../fonts/open-sans/OpenSansRegular.woff2') format('woff2'),
+  url('../fonts/open-sans/OpenSansRegular.woff') format('woff'),
+  url('../fonts/open-sans/OpenSansRegular.ttf') format('truetype'),
+  url('../fonts/open-sans/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 600;
+  src: url('../fonts/open-sans/OpenSansSemibold.eot');
+  src: url('../fonts/open-sans/OpenSansSemibold.eot') format('embedded-opentype'),
+  url('../fonts/open-sans/OpenSansSemibold.woff2') format('woff2'),
+  url('../fonts/open-sans/OpenSansSemibold.woff') format('woff'),
+  url('../fonts/open-sans/OpenSansSemibold.ttf') format('truetype'),
+  url('../fonts/open-sans/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+}
+
+@font-face {
+  font-family: 'Caecilia';
+  font-weight: 400;
+  src: url('../fonts/caecilia/bold/CaeciliaLTStdBold.eot');
+  src: url('../fonts/caecilia/bold/CaeciliaLTStdBold.eot') format('embedded-opentype'),
+  url('../fonts/caecilia/bold/CaeciliaLTStdBold.woff2') format('woff2'),
+  url('../fonts/caecilia/bold/CaeciliaLTStdBold.woff') format('woff'),
+  url('../fonts/caecilia/bold/CaeciliaLTStdBold.ttf') format('truetype'),
+  url('../fonts/caecilia/bold/CaeciliaLTStdBold.svg#OpenSansRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'Caecilia';
+  font-weight: 700;
+  src: url('../fonts/caecilia/heavy/CaeciliaLTStdHeavy.eot');
+  src: url('../fonts/caecilia/heavy/CaeciliaLTStdHeavy.eot') format('embedded-opentype'),
+  url('../fonts/caecilia/heavy/CaeciliaLTStdHeavy.woff2') format('woff2'),
+  url('../fonts/caecilia/heavy/CaeciliaLTStdHeavy.woff') format('woff'),
+  url('../fonts/caecilia/heavy/CaeciliaLTStdHeavy.ttf') format('truetype'),
+  url('../fonts/caecilia/heavy/CaeciliaLTStdHeavy.svg#CaeciliaLTStdHeavy') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('../fonts/roboto/RobotoSlabBold.eot');
+  src: url('../fonts/roboto/RobotoSlabBold.eot') format('embedded-opentype'),
+  url('../fonts/roboto/RobotoSlabBold.woff2') format('woff2'),
+  url('../fonts/roboto/RobotoSlabBold.woff') format('woff'),
+  url('../fonts/roboto/RobotoSlabBold.ttf') format('truetype'),
+  url('../fonts/roboto/RobotoSlabBold.svg#RobotoSlabBold') format('svg');
+}

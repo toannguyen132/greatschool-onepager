@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'icon-greatscrool';
+  src:    url('../fonts/icons/icon-greatscrool.eot?uc36h6');
+  src:    url('../fonts/icons/icon-greatscrool.eot?uc36h6#iefix') format('embedded-opentype'),
+  url('../fonts/icons/icon-greatscrool.ttf?uc36h6') format('truetype'),
+  url('../fonts/icons/icon-greatscrool.woff?uc36h6') format('woff'),
+  url('../fonts/icons/icon-greatscrool.svg?uc36h6#icon-greatscrool') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon-greatscrool' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-copy:before {
+  content: "\e91a";
+}
+.icon-person:before {
+  content: "\e91c";
+}
+.icon-star:before {
+  content: "\e91b";
+}
+.icon-facebook:before {
+  content: "\e914";
+}
+.icon-globe:before {
+  content: "\e915";
+}
+.icon-googleplus:before {
+  content: "\e916";
+}
+.icon-hint:before {
+  content: "\e917";
+}
+.icon-location:before {
+  content: "\e918";
+}
+.icon-twitter:before {
+  content: "\e919";
+}
+.icon-chevron-right:before {
+  content: "\e913";
+}
+.icon-user:before {
+  content: "\e912";
+}
+.icon-search:before {
+  content: "\e911";
+}
+.icon-circle-box:before {
+  content: "\e900";
+}
+.icon-circle-check:before {
+  content: "\e901";
+}
+.icon-circle-college:before {
+  content: "\e902";
+}
+.icon-circle-marker:before {
+  content: "\e903";
+}
+.icon-circle-pie:before {
+  content: "\e904";
+}
+.icon-circle-shield:before {
+  content: "\e905";
+}
+.icon-circle-sport:before {
+  content: "\e906";
+}
+.icon-circle-up:before {
+  content: "\e907";
+}
+.icon-circle-user:before {
+  content: "\e908";
+}
+.icon-caret-down:before {
+  content: "\e909";
+}
+.icon-circle-equity:before {
+  content: "\e90a";
+}
+.icon-circle-test:before {
+  content: "\e90b";
+}
+.icon-forward:before {
+  content: "\e90c";
+}
+.icon-like:before {
+  content: "\e90d";
+}
+.icon-pencil:before {
+  content: "\e90e";
+}
+.icon-phone:before {
+  content: "\e90f";
+}
+.icon-share:before {
+  content: "\e910";
+}
+

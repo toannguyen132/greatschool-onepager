@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'RobotoSlabBold';
+    src: url('fonts/RobotoSlabBold.eot');
+    src: url('fonts/RobotoSlabBold.eot') format('embedded-opentype'),
+         url('fonts/RobotoSlabBold.woff2') format('woff2'),
+         url('fonts/RobotoSlabBold.woff') format('woff'),
+         url('fonts/RobotoSlabBold.ttf') format('truetype'),
+         url('fonts/RobotoSlabBold.svg#RobotoSlabBold') format('svg');
+}
