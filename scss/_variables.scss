@@ -3,15 +3,26 @@ $dark-primary: #032532;
 $primary: #0E81C7;
 $unhighlight: #888889;
 $green: #48932D;
+$green-like: #4BC881;
 $yellow: #FFC800;
 $heading-color: #083B50;
 $light-background: #F6F9FA;
 $button-color: #0E94C7;
 
+/** --- ----**/
+$green-btn: #27D40D;
+$red: #F5543B;
+$pink: #D24392;
+$orange: #E38B16;
+$blue: #0D84D4;
+$purple: #8743D2;
+$cian: #1BB19E;
+
 $dark-gray: #1C252E;
 $gray: #404142;
 $light-gray: #C1C1C1;
 $border-color: #D1DFE5;
+$border-gray: #DBE6EB;
 
 $score-10: #1A6500;
 $score-9: #2D7000;
@@ -32,11 +43,13 @@ $score-below-avg: $score-3;
 $score-weak: $score-1;
 $score-na: #C1C1C1;
 
+
 /* ----- font ----- */
 $text-bold: 600;
 $text-heavy: 700;
 $font-heading: "Caecilia", serif;
 $font-body: "OpenSans";
+$font-heading-alt: "Roboto", serif;
 
 /** ----- spacing ------ */
 $default-padding: 15px;

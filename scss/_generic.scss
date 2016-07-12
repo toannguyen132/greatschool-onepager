@@ -61,7 +61,7 @@ h2, h3, h4{
   font-size: 1.2rem;
 }
 .btn-sm{
-  padding: 3px 10px;
+  padding: 7px 20px;
 }
 
 .btn-alt{
@@ -90,6 +90,24 @@ $scores: (
   }
   .text-score-#{$num}{
     color: $color;
+  }
+}
+
+$colors: (
+  'green': $green-btn,
+  'red': $red,
+  'pink': $pink,
+  'orange': $orange,
+  'blue': $blue,
+  'purple': $purple,
+  'cian': $cian
+);
+@each $name, $color in $colors{
+  .text-#{$name}{
+    color: $color;
+  }
+  .bg-#{$name}{
+    background-color: $color;
   }
 }
 
@@ -354,8 +372,9 @@ section.sec-white{
   &.last, &:last-child{
     border-bottom: 0;
   }
-  .btn{
+  .btn.btn-full{
     color: $unhighlight;
+    padding: 15px 20px;
   }
   .sum-section-header{
     background: $light-background;
@@ -370,9 +389,6 @@ section.sec-white{
       font-size: 1.6rem;
       color: #2D7000;
       vertical-align: middle;
-    }
-    .btn{
-      padding: 15px 20px;
     }
   }
 }
@@ -494,7 +510,7 @@ section.sec-white{
 
 .summary-box{
   background: #F6F9FA;
-  border: 1px solid #DBE6EB;
+  border: 1px solid $border-gray;
   border-radius: 1px;
   padding: 30px;
 }
@@ -539,8 +555,54 @@ section.sec-white{
 }
 
 /** --------- REVIEW ---------- **/
+.review-box{
+  background: #FFFFFF;
+  border: 1px solid $border-gray;
+  border-radius: 4px;
+  height: 200px;
+  overflow: hidden;
+
+  .review-score{
+    background-color: #fee;
+    height: 200px;
+    text-align: center;
+    color: #FFFFFF;
+    background: url(../img/review-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    .lbl{
+      font-family: $font-heading-alt;
+      font-size: 2.6rem;
+      line-height: 1em;
+    }
+    .score{
+      font-family: $font-heading-alt;
+      font-size: 7rem;
+      line-height: 1.4em;
+      color: #FFFFFF;
+    }
+    .stars-rate{
+      font-size: 2rem;
+    }
+  }
+  .review-range{
+    height: 200px;
+  }
+}
+
 .reviews-list{
   .review-item{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $border-color;
+    &:first-child{
+      padding-top: 0;
+    }
+    &:last-child{
+      border-bottom: 0;
+    }
     &:after{
       content: "";
       display: block;
@@ -587,10 +649,52 @@ section.sec-white{
         line-height: 1.5em;
       }
       .review-bot{
+        $v-padding: 7px;
+        &:after{
+          content: "";
+          display: block;
+          clear: both;
+        }
         .date{
           color: #A7A7A7;
           vertical-align: middle;
           line-height: 40px;
+        }
+        .btn-sm{
+          padding: $v-padding 20px $v-padding 10px;
+          vertical-align: middle;
+          position: relative;
+          color: #28292A;
+          [class*="icon-"]{
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+        }
+        .has-count{
+          padding-right: 50px;
+          .count{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            border-left: 1px solid $border-color;
+            padding: $v-padding 0;
+            text-align: center;
+          }
+          &.liked{
+             color: $green-like;
+             .count{
+               background-color: $green-like;
+               color: #fff;
+             }
+           }
+        }
+        .btn-share [class*="icon-"]{
+          color: #5B8ADB;
+        }
+        .btn-like [class*="icon-"]{
+          color: $green-like;
         }
       }
     }
