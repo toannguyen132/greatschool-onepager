@@ -21,6 +21,17 @@
 }
 
 @font-face {
+  font-family: 'OpenSans';
+  font-weight: 700;
+  src: url('../fonts/open-sans/OpenSansBold.eot');
+  src: url('../fonts/open-sans/OpenSansBold.eot') format('embedded-opentype'),
+  url('../fonts/open-sans/OpenSansBold.woff2') format('woff2'),
+  url('../fonts/open-sans/OpenSansBold.woff') format('woff'),
+  url('../fonts/open-sans/OpenSansBold.ttf') format('truetype'),
+  url('../fonts/open-sans/OpenSansBold.svg#OpenSansBold') format('svg');
+}
+
+@font-face {
   font-family: 'Caecilia';
   font-weight: 400;
   src: url('../fonts/caecilia/bold/CaeciliaLTStdBold.eot');

@@ -5,10 +5,37 @@ $unhighlight: #888889;
 $green: #48932D;
 $yellow: #FFC800;
 $heading-color: #083B50;
+$light-background: #F6F9FA;
+$button-color: #0E94C7;
+
+$dark-gray: #1C252E;
+$light-gray: #C1C1C1;
+$border-color: #D1DFE5;
+
+$score-10: #1A6500;
+$score-9: #2D7000;
+$score-8: #437B00;
+$score-7: #5D8600;
+$score-6: #799100;
+$score-5: #919400;
+$score-4: #A79000;
+$score-3: #B27E00;
+$score-2: #BE6800;
+$score-1: #C94F00;
+$score-0: #FF001F;
+$score-excellent: $score-10;
+$score-good: $score-9;
+$score-fair: $green;
+$score-average: $score-6;
+$score-below-avg: $score-3;
+$score-weak: $score-1;
+$score-na: #C1C1C1;
 
 /* ----- font ----- */
 $text-bold: 600;
+$text-heavy: 700;
 $font-heading: "Caecilia", serif;
+$font-body: "OpenSans";
 
 /** ----- spacing ------ */
 $default-padding: 15px;
