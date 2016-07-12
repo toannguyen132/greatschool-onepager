@@ -307,9 +307,11 @@ $scores: (
 /** ---------- SECTIONS ----------- **/
 section.sec-colored{
   background-color: #F8FBFB;
+  padding: 30px 0;
 }
 section.sec-white{
   background-color: #fff;
+  padding: 30px 0;
 }
 .section-title{
   font-size: 2.6rem;
@@ -318,7 +320,6 @@ section.sec-white{
 
 /** --------- SCHOOL SUMMARY --------- **/
 .school-summary{
-  padding: 30px 0;
 
   .summary-box{
     margin-top: 70px;
@@ -355,32 +356,32 @@ section.sec-white{
       display: inline-block;
     }
   }
+}
 
-  .sum-section{
-    margin-top: 50px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid $border-color;
-    &.last, &:last-child{
-      border-bottom: 0;
+.sum-section{
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid $border-color;
+  &.last, &:last-child{
+    border-bottom: 0;
+  }
+  .btn{
+    padding: 15px 20px;
+    color: $unhighlight;
+  }
+  .sum-section-header{
+    background: $light-background;
+    padding: 15px;
+    .circle-number{
+      @include circle-number($green, 50px, 2.5rem);
     }
-    .btn{
-      padding: 15px 20px;
-      color: $unhighlight;
-    }
-    .sum-section-header{
-      background: $light-background;
-      padding: 15px;
-      .circle-number{
-        @include circle-number($green, 50px, 2.5rem);
-      }
-      .text{
-        margin-left: 15px;
-        text-transform: uppercase;
-        font-weight: $text-bold;
-        font-size: 1.6rem;
-        color: #2D7000;
-        vertical-align: middle;
-      }
+    .text{
+      margin-left: 15px;
+      text-transform: uppercase;
+      font-weight: $text-bold;
+      font-size: 1.6rem;
+      color: #2D7000;
+      vertical-align: middle;
     }
   }
 }
@@ -512,8 +513,36 @@ section.sec-white{
   color: $dark-primary; // #1C252E;
   font-family: $font-body;
   text-transform: uppercase;
+  margin-top: 0;
 }
 .sum-section-subtitle{
   font-size: 1.2rem;
   color: $unhighlight;
+}
+
+.sum-tags{
+  text-align: center;
+  .tags-list{
+    display: inline-block;
+  }
+  .tag{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.04);
+    border-radius: 2px;
+    line-height: 22px;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    margin: 0 5px 5px 0;
+    display: inline-block;
+    .text{
+      margin: 0 5px;
+      font-weight: $text-bold;
+      font-size: 1.3rem;
+      color: #28292A;
+    }
+    .sub{
+      font-weight: $text-bold;
+      color: #A7A7A7;
+    }
+  }
 }

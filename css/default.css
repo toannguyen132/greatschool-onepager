@@ -7071,76 +7071,77 @@ h2, h3, h4 {
 
 /** ---------- SECTIONS ----------- **/
 section.sec-colored {
-  background-color: #F8FBFB; }
+  background-color: #F8FBFB;
+  padding: 30px 0; }
 
 section.sec-white {
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 30px 0; }
 
 .section-title {
   font-size: 2.6rem;
   color: #083B50; }
 
 /** --------- SCHOOL SUMMARY --------- **/
-.school-summary {
-  padding: 30px 0; }
-  .school-summary .summary-box {
-    margin-top: 70px;
-    padding: 30px 10px; }
-    .school-summary .summary-box .col {
-      padding-left: 30px;
-      padding-right: 30px; }
-      @media screen and (min-width: 992px) {
-        .school-summary .summary-box .col {
-          border-right: 1px solid #CAD4DF; }
-          .school-summary .summary-box .col:last-child {
-            border-right: none; } }
-    .school-summary .summary-box .sum-line {
-      line-height: 25px;
-      color: #0E81C7;
-      font-weight: 600; }
-    .school-summary .summary-box .circle-number {
-      width: 25px;
-      height: 25px;
-      line-height: 25px;
-      background-color: #5F9622;
-      color: #fff; }
-    .school-summary .summary-box .circle-number, .school-summary .summary-box .circle-icon {
-      margin: 5px 5px 5px 0; }
-    .school-summary .summary-box .circle-icon {
-      font-size: 25px;
+.school-summary .summary-box {
+  margin-top: 70px;
+  padding: 30px 10px; }
+  .school-summary .summary-box .col {
+    padding-left: 30px;
+    padding-right: 30px; }
+    @media screen and (min-width: 992px) {
+      .school-summary .summary-box .col {
+        border-right: 1px solid #CAD4DF; }
+        .school-summary .summary-box .col:last-child {
+          border-right: none; } }
+  .school-summary .summary-box .sum-line {
+    line-height: 25px;
+    color: #0E81C7;
+    font-weight: 600; }
+  .school-summary .summary-box .circle-number {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #5F9622;
+    color: #fff; }
+  .school-summary .summary-box .circle-number, .school-summary .summary-box .circle-icon {
+    margin: 5px 5px 5px 0; }
+  .school-summary .summary-box .circle-icon {
+    font-size: 25px;
+    vertical-align: middle;
+    display: inline-block; }
+
+.sum-section {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #D1DFE5; }
+  .sum-section.last, .sum-section:last-child {
+    border-bottom: 0; }
+  .sum-section .btn {
+    padding: 15px 20px;
+    color: #888889; }
+  .sum-section .sum-section-header {
+    background: #F6F9FA;
+    padding: 15px; }
+    .sum-section .sum-section-header .circle-number {
+      display: inline-block;
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+      background-color: #48932D;
       vertical-align: middle;
-      display: inline-block; }
-  .school-summary .sum-section {
-    margin-top: 50px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #D1DFE5; }
-    .school-summary .sum-section.last, .school-summary .sum-section:last-child {
-      border-bottom: 0; }
-    .school-summary .sum-section .btn {
-      padding: 15px 20px;
-      color: #888889; }
-    .school-summary .sum-section .sum-section-header {
-      background: #F6F9FA;
-      padding: 15px; }
-      .school-summary .sum-section .sum-section-header .circle-number {
-        display: inline-block;
-        color: #fff;
-        font-weight: 600;
-        text-align: center;
-        background-color: #48932D;
-        vertical-align: middle;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        border-radius: 50px;
-        font-size: 2.5rem; }
-      .school-summary .sum-section .sum-section-header .text {
-        margin-left: 15px;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 1.6rem;
-        color: #2D7000;
-        vertical-align: middle; }
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50px;
+      font-size: 2.5rem; }
+    .sum-section .sum-section-header .text {
+      margin-left: 15px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.6rem;
+      color: #2D7000;
+      vertical-align: middle; }
 
 .sum-section-list .sum-section-item {
   border-bottom: 1px solid #D1DFE5;
@@ -7242,11 +7243,34 @@ section.sec-white {
   font-size: 2rem;
   color: #032532;
   font-family: "OpenSans";
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 0; }
 
 .sum-section-subtitle {
   font-size: 1.2rem;
   color: #888889; }
+
+.sum-tags {
+  text-align: center; }
+  .sum-tags .tags-list {
+    display: inline-block; }
+  .sum-tags .tag {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 2px;
+    line-height: 22px;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    margin: 0 5px 5px 0;
+    display: inline-block; }
+    .sum-tags .tag .text {
+      margin: 0 5px;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: #28292A; }
+    .sum-tags .tag .sub {
+      font-weight: 600;
+      color: #A7A7A7; }
 
 /* ----- header ------ */
 header {
