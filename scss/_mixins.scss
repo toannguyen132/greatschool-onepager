@@ -1,0 +1,17 @@
+@mixin circle-number($background, $size, $font-size){
+  display: inline-block;
+  color: #fff;
+  font-weight: $text-bold;
+  text-align: center;
+  background-color: $background;
+  vertical-align: middle;
+  width: $size;
+  height: $size;
+  line-height: $size;
+  border-radius: $size;
+  font-size: $font-size;
+}
+
+@mixin border-radius( $size ){
+
+}
