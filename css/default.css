@@ -7278,7 +7278,37 @@ section.sec-white {
     .review-box .review-score .stars-rate {
       font-size: 2rem; }
   .review-box .review-range {
-    height: 200px; }
+    height: 200px;
+    padding: 25px 40px; }
+    .review-box .review-range .icon {
+      color: #888889;
+      font-size: 1.2rem;
+      vertical-align: middle;
+      margin-right: 8px;
+      display: inline-block; }
+      .review-box .review-range .icon.icon-user {
+        color: #62717F; }
+    .review-box .review-range .review-range-sum .icon {
+      line-height: 2.8rem;
+      vertical-align: top; }
+    .review-box .review-range .review-range-sum .sum {
+      font-size: 2rem;
+      line-height: 2.8rem; }
+    .review-box .review-range .review-range-item {
+      font-size: 16px;
+      color: #1C252E;
+      line-height: 15px;
+      margin-top: 7px; }
+      .review-box .review-range .review-range-item > span {
+        vertical-align: middle;
+        line-height: 15px; }
+      .review-box .review-range .review-range-item .review-rate {
+        display: inline-block;
+        width: 40px; }
+      .review-box .review-range .review-range-item .bar {
+        display: inline-block;
+        height: 15px;
+        margin-right: 10px; }
 
 .reviews-list .review-item {
   padding-top: 30px;
