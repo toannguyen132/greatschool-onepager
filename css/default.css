@@ -7270,6 +7270,33 @@ section.sec-white {
       font-weight: 600;
       color: #A7A7A7; }
 
+/** --------- SIDEBAR --------- **/
+.sidebar-widget {
+  margin-bottom: 40px; }
+  .sidebar-widget img {
+    max-width: 100%; }
+
+.context-hint {
+  background: #fff;
+  box-shadow: 0px 23px 27px 0px rgba(0, 0, 0, 0.09); }
+  .context-hint:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .context-hint .hint-button {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding: 20px 15px;
+    border-right: 1px solid #D1DFE5;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #28292A; }
+    .context-hint .hint-button:last-child {
+      border-right: 0; }
+    .context-hint .hint-button [class*="icon-"] {
+      color: #0DA7E3; }
+
 /** --------- REVIEW ---------- **/
 .review-box {
   background: #FFFFFF;
