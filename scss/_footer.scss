@@ -1,0 +1,136 @@
+footer{
+	background-color: #15314E;
+	font-size: 14px;
+	color: #AAB4BF;
+	line-height: 17px;
+	padding: 70px 0;
+	@media (max-width: $mobile-max){
+		text-align: center;
+	}
+
+	.footer-about{
+		.logo{
+			margin-bottom: $padding-wide;
+		}
+		.btn-signup{
+			margin: 40px 0 60px 0;
+			min-width: 120px;
+		}
+	}
+
+	.follow{
+		.widget-title{
+			display: inline-block;
+			margin-right: 20px;
+		}
+		margin-bottom: $padding-df;
+		@media (max-width: $mobile-max){
+			margin-bottom: $padding-wide;
+		}
+	}
+
+	.social-icon{
+		display: inline-block;
+		width: 36px;
+		height: 36px;
+		line-height: 36px;
+		border-radius: 18px;
+		font-size: 1.5rem;
+		text-align: center;
+		background-color: #0C2138;
+		color: #fff;
+		margin-right: 5px;
+		text-decoration: none;
+	}
+
+	/** right **/
+	.widget-title{
+		font-weight: 700;
+		font-size: 1.8rem;
+		color: #FDFEFF;
+		margin: 0 0 15px 0;
+	}
+	.footer-column-row{
+		text-align: justify;
+		margin-left: -15px;
+		margin-right: -15px;
+		&:after{
+			content: "";
+			display: inline-block;
+			width: 100%;
+		}
+	}
+	.footer-column-list, .footer-column-form{
+		padding: 0 15px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.footer-column-form{
+		@media (max-width: $mobile-max){
+			width: 100%;
+			text-align: center;
+			margin-bottom: $padding-wide;
+		}
+	}
+
+	.footer-list{
+		margin-bottom: $padding-wide;
+		ul{
+			list-style: none;
+			list-style-image: none;
+			list-style-position: outside;
+			padding: 0;
+			margin: 0;
+			li, li a{
+				font-size: 12px;
+				line-height: 2em;
+				color: #00C2FF;
+			}
+		}
+	}
+	.footer-input{
+		display: block;
+		padding: 13px 15px;
+		position: relative;
+		background: #132C46;
+		// opacity: 0.43;
+		// background: #10171F;
+		border: 1px solid #2C3E50;
+		border-radius: 3px;
+		.caret{
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			margin-top: -3px;
+			color: #fff;
+		}
+		select{
+			outline: none;
+			width: 100%;
+			background-color: transparent;
+			border: none;
+			-webkit-appearance: none;
+			apple-appearance: none;
+			khtml-appearance: none;
+			appearance: none
+		}
+	}
+
+	.tag{
+		margin-right: 3px;
+		margin-bottom: 5px;
+		background: #12263A;
+		border-radius: 4px;
+		padding: 9px 15px;
+		font-size: 12px;
+		color: rgba(255,255,255,0.6);
+		line-height: 1em;
+		display: inline-block;
+		transition: all 300ms;
+		&:hover{
+			text-decoration: none;
+			background-color: darken(#12263A, 1%);
+		}
+	}
+}

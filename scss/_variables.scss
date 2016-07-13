@@ -18,6 +18,7 @@ $blue: #0D84D4;
 $purple: #8743D2;
 $cian: #1BB19E;
 
+$heading-gray: #28292A;
 $dark-gray: #1C252E;
 $gray: #404142;
 $light-gray: #C1C1C1;
@@ -53,3 +54,15 @@ $font-heading-alt: "Roboto", serif;
 
 /** ----- spacing ------ */
 $default-padding: 15px;
+$padding-df: 15px;
+$padding-wide: 30px;
+$border-raidus: 4px;
+
+
+/** Responsive **/
+$desktop-lg-min: $screen-lg-min;
+$desktop-max: $screen-md-max;
+$desktop-min: $screen-md-min;
+$tablet-min: $screen-sm-min;
+$mobile-max: $screen-xs-max;
+$tablet-max: $screen-sm-max;

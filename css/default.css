@@ -6537,6 +6537,7 @@ button.close {
 /** --- ----**/
 /* ----- font ----- */
 /** ----- spacing ------ */
+/** Responsive **/
 @font-face {
   font-family: 'icon-greatscrool';
   src: url("../fonts/icons/icon-greatscrool.eot?uc36h6");
@@ -6555,6 +6556,15 @@ button.close {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-pinterest:before {
+  content: "\e92c"; }
+
+.icon-rss:before {
+  content: "\e92d"; }
+
+.icon-youtube:before {
+  content: "\e92e"; }
 
 .icon-check:before {
   content: "\e921"; }
@@ -6732,7 +6742,7 @@ body {
 h1 {
   font-family: "Caecilia", serif; }
 
-h2, h3, h4 {
+h2, h3 {
   font-family: "Roboto", serif; }
 
 /* ----------- general ----------- */
@@ -6752,7 +6762,8 @@ h2, h3, h4 {
   color: #fff;
   font-weight: 600;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  background-color: #48932D; }
 
 .btn {
   background-image: -webkit-linear-gradient(90deg, #EAEEF3 0%, #FFFFFF 63%);
@@ -6782,6 +6793,15 @@ h2, h3, h4 {
   background-image: linear-gradient(-180deg, #FBFDFD 0%, #F6F9FA 100%);
   border: 1px solid #DBE6EB;
   border-radius: 2px; }
+
+.btn-action {
+  background: #0094DA;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  border-radius: 3px;
+  padding: 9px 40px;
+  border: 0; }
 
 .bg-score-10 {
   background-color: #1A6500; }
@@ -7057,7 +7077,8 @@ section.sec-white {
 
 .section-title {
   font-size: 2.6rem;
-  color: #083B50; }
+  color: #083B50;
+  margin-bottom: 30px; }
 
 /** --------- SCHOOL SUMMARY --------- **/
 .school-summary .summary-box {
@@ -7391,6 +7412,95 @@ section.sec-white {
     .reviews-list .review-item .col-content .review-bot .btn-like [class*="icon-"] {
       color: #4BC881; }
 
+/** -------- PHOTOS --------*/
+.photo-box {
+  padding: 50px;
+  margin-top: 30px; }
+  .photo-box:after {
+    content: "";
+    clear: both;
+    display: block; }
+  .photo-box .thumb {
+    text-align: center; }
+  .photo-box .content {
+    font-size: 1.6rem;
+    color: #1C252E;
+    line-height: 1.6em; }
+
+/** ----------- NEAR SCHOOL ----------- **/
+.neighbor {
+  margin-top: 20px; }
+
+.neighbor-map {
+  height: 300px;
+  background-color: #888889; }
+
+.school-list {
+  margin-top: 30px; }
+
+.nearby-school-item .left {
+  width: 90px; }
+  .nearby-school-item .left .stars {
+    font-size: 11px; }
+  .nearby-school-item .left .star-bg {
+    color: #DBDBDB; }
+  .nearby-school-item .left .star-rate {
+    color: #8593A2; }
+  .nearby-school-item .left .circle-number {
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    background-color: #48932D;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 2rem; }
+.nearby-school-item .info {
+  padding-left: 15px; }
+  .nearby-school-item .info .school-name {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #28292A;
+    letter-spacing: 0px; }
+  .nearby-school-item .info p {
+    font-size: 1.3rem;
+    color: #707171;
+    letter-spacing: 0px;
+    line-height: 20px; }
+
+/** ---------- RENTAL ---------- **/
+section.sec-rental {
+  padding-bottom: 60px; }
+
+.rental-item .thumb {
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 200px; }
+  .rental-item .thumb .price {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    padding: 8px 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem; }
+.rental-item .rental-name {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #28292A;
+  letter-spacing: 0px;
+  margin-bottom: 5px; }
+.rental-item .info {
+  font-size: 1.2rem;
+  color: #62717F; }
+  .rental-item .info p {
+    margin-bottom: 3px; }
+
 /* ----- header ------ */
 header {
   padding: 15px 0; }
@@ -7480,5 +7590,112 @@ header {
   .header-trending-topic .topic-item {
     margin-left: 15px;
     margin-right: 15px; }
+
+footer {
+  background-color: #15314E;
+  font-size: 14px;
+  color: #AAB4BF;
+  line-height: 17px;
+  padding: 70px 0
+  /** right **/ }
+  @media (max-width: 767px) {
+    footer {
+      text-align: center; } }
+  footer .footer-about .logo {
+    margin-bottom: 30px; }
+  footer .footer-about .btn-signup {
+    margin: 40px 0 60px 0;
+    min-width: 120px; }
+  footer .follow {
+    margin-bottom: 15px; }
+    footer .follow .widget-title {
+      display: inline-block;
+      margin-right: 20px; }
+    @media (max-width: 767px) {
+      footer .follow {
+        margin-bottom: 30px; } }
+  footer .social-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 18px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #0C2138;
+    color: #fff;
+    margin-right: 5px;
+    text-decoration: none; }
+  footer .widget-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #FDFEFF;
+    margin: 0 0 15px 0; }
+  footer .footer-column-row {
+    text-align: justify;
+    margin-left: -15px;
+    margin-right: -15px; }
+    footer .footer-column-row:after {
+      content: "";
+      display: inline-block;
+      width: 100%; }
+  footer .footer-column-list, footer .footer-column-form {
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: top; }
+  @media (max-width: 767px) {
+    footer .footer-column-form {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px; } }
+  footer .footer-list {
+    margin-bottom: 30px; }
+    footer .footer-list ul {
+      list-style: none;
+      list-style-image: none;
+      list-style-position: outside;
+      padding: 0;
+      margin: 0; }
+      footer .footer-list ul li, footer .footer-list ul li a {
+        font-size: 12px;
+        line-height: 2em;
+        color: #00C2FF; }
+  footer .footer-input {
+    display: block;
+    padding: 13px 15px;
+    position: relative;
+    background: #132C46;
+    border: 1px solid #2C3E50;
+    border-radius: 3px; }
+    footer .footer-input .caret {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin-top: -3px;
+      color: #fff; }
+    footer .footer-input select {
+      outline: none;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      -webkit-appearance: none;
+      apple-appearance: none;
+      khtml-appearance: none;
+      appearance: none; }
+  footer .tag {
+    margin-right: 3px;
+    margin-bottom: 5px;
+    background: #12263A;
+    border-radius: 4px;
+    padding: 9px 15px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1em;
+    display: inline-block;
+    -webkit-transition: all 300ms;
+            transition: all 300ms; }
+    footer .tag:hover {
+      text-decoration: none;
+      background-color: #112336; }
 
 /*# sourceMappingURL=default.css.map */
