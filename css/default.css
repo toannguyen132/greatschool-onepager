@@ -7593,11 +7593,19 @@ section.sec-white {
   .sidebar-widget img {
     max-width: 100%; }
 
+.col-sidebar {
+  position: relative; }
+
 .context-hint {
   background: #fff;
   box-shadow: 0px 23px 27px 0px rgba(0, 0, 0, 0.09); }
-  .context-hint.hided .sum-rate {
-    display: none; }
+  .context-hint.hided .part-sum {
+    max-height: 0; }
+  .context-hint .part-sum {
+    max-height: 500px;
+    -webkit-transition: all 700ms;
+            transition: all 700ms;
+    overflow: hidden; }
   .context-hint .sum-rate {
     padding: 20px;
     font-size: 1.2rem;
@@ -8094,4 +8102,5 @@ footer {
     footer .tag:hover {
       text-decoration: none;
       background-color: #112336; }
+
 /*# sourceMappingURL=default.css.map */
