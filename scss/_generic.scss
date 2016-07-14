@@ -17,6 +17,7 @@ h1{
 
 h2, h3{
   font-family: "Roboto", serif;
+  font-weight: 700;
 }
 
 /* ----------- general ----------- */
@@ -29,7 +30,12 @@ h2, h3{
   background-color: #C1D2D9;
   width: 16px;
   height: 16px;
+  line-height: 1.6rem;
   color: #fff;
+  &:hover{
+    color: #fff;
+    background-color: darken(#C1D2D9, 10% );
+  }
 }
 
 .score-number, .circle-number{
@@ -181,26 +187,37 @@ $colors: (
         font-size: 1.2em;
       }
       @media screen and (min-width: $screen-md-min){
-        margin-right: 30px;
+        
       }
     }
 
-    .phone{
+    .sep{
+      margin-left: 15px;
+      margin-right: 15px;
+      height: 15px;
+      width: 1px;
+      background-color: rgba(255,255,255,0.5);
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    .phone, .link{
       background-color: rgba(0,0,0, 0.24);
       border-radius: 30px;
       padding: 5px 10px;
     }
+
     .link-round{
       background-color: rgba(0,0,0, 0.24);
-      height: 27px;
-      width: 27px;
-      line-height: 27px;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
       vertical-align: middle;
       text-align: center;
       border-radius: 30px;
+      display: inline-block;
     }
     .more-detail{
-      margin-left: 30px;
       a{ color: #fff; }
     }
   }
@@ -576,10 +593,46 @@ section.sec-white{
 .context-hint{
   background: #fff;
   box-shadow: 0px 23px 27px 0px rgba(0,0,0,0.09);
-  &:after{
+
+  &.hided .sum-rate{
+    display: none;
+  }
+
+  .sum-rate{
+    padding: 20px;
+    font-size: 1.2rem;
+    color: $unhighlight;
+    line-height: 2rem;
+    border-bottom: 1px solid $border-color;
+    p{ margin-bottom: 0; }
+    .big{
+      font-weight: $text-bold;
+      font-size: 1.7rem;
+      color: $dark-gray;
+      letter-spacing: 0px;
+      line-height: 24px;
+    }
+  }
+
+  .num-score{
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    color: #5EA80E;
+  }
+
+  .action-buttons:after{
     content: "";
     display: block;
     clear: both;
+  }
+
+  .stars{
+    .star-bg{
+      color: #D8D8D8;
+    }
+    .star-rate{
+      color: #707171;
+    }
   }
 
   .hint-button{
@@ -587,7 +640,7 @@ section.sec-white{
     width: 33.33%;
     text-align: center;
     padding: 20px 15px;
-    border-right: 1px solid #D1DFE5;
+    border-right: 1px solid $border-color;
     font-weight: $text-bold;
     font-size: 1.2rem;
     color: $heading-gray;
@@ -897,4 +950,35 @@ section.sec-rental{
       margin-bottom: 3px;
     }
   }
+}
+
+/** --------- OTHERS --------- **/
+.hint-btn{
+  cursor: pointer;
+  &:hover{
+    background-color: rgba(0, 0, 0, 0.8)
+  }
+}
+
+// tooltip theme
+/* This is how you would create a custom secondary theme on top of tooltipster-noir: */
+.tooltipster-sidetip.tooltipster-base .tooltipster-box {
+  background: #fff;
+  box-shadow: 0px 8px 22px 0px rgba(0,0,0,0.10);
+  border-radius: 3px;
+  border: 0;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border{
+  border-top-color: #fff;
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background{
+  border-top-color: #fff;
+}
+
+.tooltipster-sidetip.tooltipster-base .tooltipster-content {
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #000;
+  line-height: 20px;
 }
