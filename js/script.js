@@ -22,19 +22,20 @@
 		var isMobile = $(window).width() <= 768;
 
 		// sidebar
-		function sidebar_context(){
-			$context = $('#context_hint');
-			offset = $context.offset().top;
-			anchor = offset + $context.outerHeight();
+		var sidebar_context = function(){
+			var $context = $('#context_hint');
+			var offset = $context.offset().top;
+			var anchor = offset + $context.outerHeight();
 
 			$context.css('width', $context.width() ); // 30 is padding
 			// console.log(offset);
-			$(window).scroll(function(){
+			var updateSidebar = function(){
 				if ( isMobile ) return;
 
 				var top = $('body').scrollTop();
 				var pos_left = $context.parent().offset().left + 15; // 15 is padding
 				var pos_top = 30;
+
 				if ( top > anchor ){
 					$context.removeClass('hided');
 					$context.css({
@@ -42,7 +43,7 @@
 						"top": pos_top,
 						"left": pos_left
 					});
-				} else{
+				} else {
 					$context.addClass('hided');
 					$context.css({
 						"position": 'relative',
@@ -50,8 +51,14 @@
 						"left": 'auto'
 					});
 				}
+			}
+
+			updateSidebar();
+			$(window).scroll(function(){
+				updateSidebar();
 			});	
 		}
+
 		sidebar_context();
 	});
 

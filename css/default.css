@@ -7890,7 +7890,7 @@ section.sec-rental {
 /* This is how you would create a custom secondary theme on top of tooltipster-noir: */
 .tooltipster-sidetip.tooltipster-base .tooltipster-box {
   background: #fff;
-  box-shadow: 0px 8px 22px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   border: 0; }
 
@@ -7899,6 +7899,12 @@ section.sec-rental {
 
 .tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
   border-top-color: #fff; }
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border {
+  border-bottom-color: #fff; }
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-background {
+  border-bottom-color: #fff; }
 
 .tooltipster-sidetip.tooltipster-base .tooltipster-content {
   padding: 20px;
