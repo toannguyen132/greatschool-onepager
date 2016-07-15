@@ -229,7 +229,7 @@
                                         </div>
                                     </div>
                                     <div class="sum-section-list">
-                                        <div class="sum-section-item">
+                                        <div class="sum-section-item tooltip-chart">
                                             <div class="col-heading">
                                                 <div class="heading-wrapper">
                                                     <p class="title">English Proficiency</p>
@@ -251,7 +251,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="sum-section-item">
+                                        <div class="sum-section-item tooltip-chart">
                                             <div class="col-heading">
                                                 <div class="heading-wrapper">
                                                     <p class="title">Math Proficiency</p>
@@ -273,7 +273,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="sum-section-item">
+                                        <div class="sum-section-item tooltip-chart">
                                             <div class="col-heading">
                                                 <div class="heading-wrapper">
                                                     <p class="title">Science Proficiency</p>
@@ -295,7 +295,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="sum-section-item">
+                                        <div class="sum-section-item tooltip-chart">
                                             <div class="col-heading">
                                                 <div class="heading-wrapper">
                                                     <p class="title">Other Course Proficiency</p>
@@ -783,8 +783,12 @@
 
         <div class="neighbor">
             <div class="container">
-                <div class="pull-right"><a href="#">See this school's attendance zone</a></div>
-                <h2 class="section-title">Neighborhood</h2>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="section-title pull-left">Neighborhood</h2>
+                        <div class="pull-right title-right"><a href="#">See this school's attendance zone</a></div>
+                    </div>
+                </div>
             </div>
 
             <div class="neighbor-map" >
@@ -993,6 +997,52 @@
             </div>
         </div>
     </footer>
+
+    <div class="tooltip-custom tooltip-bar-chart"  id="tootip_1">
+        <div class="tooltip-wrap">
+            <h4>How other Schools compares to Willow Glen in English Profiency?</h4>
+            <div class="tooltip-bar-table">
+                <table>
+                    <tr>
+                        <td>State</td>
+                        <td>
+                            <span class="bar bg-score-10" style="width: 120px"></span>
+                            90
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>District</td>
+                        <td>
+                            <span class="bar bg-score-6" style="width: 90px"></span>
+                            60
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>This School</td>
+                        <td>
+                            <span class="bar bg-score-7" style="width: 105px"></span>
+                            70
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Schools in my district</td>
+                        <td>
+                            <span class="bar bg-score-1" style="width: 15px"></span>
+                            10
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Schools like this one</td>
+                        <td>
+                            <span class="bar bg-score-9" style="width: 120px"></span>
+                            90
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>

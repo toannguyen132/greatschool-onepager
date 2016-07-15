@@ -352,6 +352,12 @@ section.sec-white{
   font-size: 2.6rem;
   color: $heading-color;
   margin-bottom: 30px;
+  line-height: 1em;
+}
+.title-right{
+  line-height: 2.6rem;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 /** --------- SCHOOL SUMMARY --------- **/
@@ -431,6 +437,9 @@ section.sec-white{
       display: block;
       clear: both;
     }
+    &:hover{
+      background-color: darken(#fff, 1%);
+    }
     .col-heading{
       width: 50%;
       float: left;
@@ -476,6 +485,9 @@ section.sec-white{
 .bar-chart{
   position: relative;
   margin-top: 10px;
+  &.inline{
+    display: inline-block;
+  }
   .bar-bg{
     display: block;
     height: 8px;
@@ -997,4 +1009,32 @@ section.sec-rental{
   font-size: 1.2rem;
   color: #000;
   line-height: 20px;
+}
+
+.tooltip-custom{
+  // display: none;
+  max-width: 400px;
+  h4{
+    font-weight: $text-bold;
+    font-size: 1.6rem;
+    color: #000000;
+    line-height: 1.5em;
+  }
+  .bar{
+    height: 12px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.tooltip-bar-table{
+  table{
+    border: 0;
+    width: 100%;
+    td{
+      padding: 4px 0;
+      vertical-align: middle;
+    }
+  }
 }

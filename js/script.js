@@ -19,6 +19,11 @@
 			debug: false
 		});
 
+		$('.tooltip-chart').tooltipster({
+			content: $('#tootip_1').detach(),
+			contentCloning: true
+		});
+
 		var isMobile = $(window).width() <= 768;
 
 		// sidebar
