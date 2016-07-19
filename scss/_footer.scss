@@ -16,6 +16,12 @@ footer{
 			margin: 40px 0 60px 0;
 			min-width: 120px;
 		}
+		@media (max-width: $tablet-max){
+			text-align: center;
+			.logo{
+				width: 200px !important;
+			}
+		}
 	}
 
 	.follow{
@@ -26,6 +32,11 @@ footer{
 		margin-bottom: $padding-df;
 		@media (max-width: $mobile-max){
 			margin-bottom: $padding-wide;
+			text-align: left;
+			.widget-title{
+				display: block;
+				margin-right: 0;
+			}
 		}
 	}
 
@@ -59,6 +70,9 @@ footer{
 			display: inline-block;
 			width: 100%;
 		}
+		@media (max-width: $mobile-max){
+			text-align: left;
+		}
 	}
 	.footer-column-list, .footer-column-form{
 		padding: 0 15px;
@@ -71,6 +85,12 @@ footer{
 			width: 100%;
 			text-align: center;
 			margin-bottom: $padding-wide;
+		}
+	}
+
+	.footer-column-list{
+		@media (max-width: $mobile-max){
+			width: 47%;
 		}
 	}
 

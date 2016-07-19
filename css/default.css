@@ -7230,6 +7230,9 @@ h2, h3 {
 .bg-cian {
   background-color: #1BB19E; }
 
+@media screen and (max-width: 991px) {
+  .hidden-mobile {
+    display: none !important; } }
 /* ----- summary ----- */
 .school-header {
   background-image: url("../img/header-bg.png");
@@ -7240,7 +7243,9 @@ h2, h3 {
     text-decoration: none; }
 
 .breakcrumb {
-  padding: 10px 0; }
+  padding: 10px 0;
+  position: relative;
+  background-color: #0C3D5F; }
   .breakcrumb .bc-item {
     color: #fff;
     font-size: 1.2rem; }
@@ -7258,13 +7263,97 @@ h2, h3 {
 .school-header .school-info {
   padding-bottom: 15px; }
   .school-header .school-info .school-name {
-    font-size: 3.6rem;
-    padding-top: 60px; }
+    font-size: 2.2rem;
+    text-align: center; }
+    @media screen and (min-width: 992px) {
+      .school-header .school-info .school-name {
+        font-size: 3.6rem;
+        padding-top: 60px;
+        text-align: left; } }
+    @media screen and (max-width: 991px) {
+      .school-header .school-info .school-name {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; } }
   .school-header .school-info .detail-info {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    text-align: center; }
+    .school-header .school-info .detail-info span {
+      margin-bottom: 10px; }
+    @media screen and (min-width: 992px) {
+      .school-header .school-info .detail-info {
+        text-align: left; } }
+    @media screen and (max-width: 991px) {
+      .school-header .school-info .detail-info .sep {
+        display: none; }
+      .school-header .school-info .detail-info .loc {
+        display: block; }
+      .school-header .school-info .detail-info .phone, .school-header .school-info .detail-info .link {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 1.2rem;
+        vertical-align: middle;
+        padding: 0;
+        text-align: center; }
+        .school-header .school-info .detail-info .phone a, .school-header .school-info .detail-info .link a {
+          display: block;
+          width: 100%; }
+      .school-header .school-info .detail-info .link-round {
+        width: 25px;
+        height: 25px;
+        line-height: 25px; } }
   .school-header .school-info .statistic {
     padding-top: 40px; }
+    @media screen and (max-width: 991px) {
+      .school-header .school-info .statistic .stat-item {
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0; }
+        .school-header .school-info .statistic .stat-item:after {
+          content: "";
+          display: block;
+          clear: both; }
+      .school-header .school-info .statistic .stat-sep {
+        display: block;
+        width: 100%;
+        height: 1px; }
+      .school-header .school-info .statistic .stat-lbl {
+        display: block;
+        float: left;
+        width: 60%;
+        text-align: left;
+        line-height: 2.4rem;
+        font-size: 1rem;
+        vertical-align: middle; }
+      .school-header .school-info .statistic .stat-stars {
+        display: block;
+        float: left;
+        width: 40%;
+        text-align: left; }
+        .school-header .school-info .statistic .stat-stars .big {
+          line-height: 2.4rem;
+          font-size: 1.2rem;
+          vertical-align: middle; }
+        .school-header .school-info .statistic .stat-stars .stars {
+          margin-top: 0;
+          height: 21px; }
+      .school-header .school-info .statistic .score-number {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 2.1rem; }
+      .school-header .school-info .statistic .score-mobile .stat-lbl {
+        font-size: 1.2rem;
+        color: #fff;
+        line-height: 1.5em; } }
 
+@media screen and (min-width: 992px) {
+  .score-mobile {
+    display: none !important; } }
 .school-header .detail-info > span {
   display: inline-block; }
 .school-header .detail-info .loc .icon-location {
@@ -7397,6 +7486,9 @@ section.sec-white {
   color: #083B50;
   margin-bottom: 30px;
   line-height: 1em; }
+  @media screen and (max-width: 991px) {
+    .section-title {
+      text-align: center; } }
 
 .title-right {
   line-height: 2.6rem;
@@ -7466,19 +7558,18 @@ section.sec-white {
 
 .sum-section-list .sum-section-item {
   border-bottom: 1px solid #D1DFE5;
-  padding: 25px 0 15px 0; }
+  padding: 25px 0 15px 0;
+  position: relative; }
   .sum-section-list .sum-section-item:after {
     content: "";
     display: block;
     clear: both; }
   .sum-section-list .sum-section-item:hover {
     background-color: #fcfcfc; }
-  .sum-section-list .sum-section-item .col-heading {
-    width: 50%;
-    float: left; }
-  .sum-section-list .sum-section-item .col-content {
-    width: 50%;
-    float: left; }
+  @media screen and (min-width: screen-md-min) {
+    .sum-section-list .sum-section-item .col-heading, .sum-section-list .sum-section-item .col-content {
+      width: 50%;
+      float: left; } }
   .sum-section-list .sum-section-item .heading-wrapper {
     width: 60%; }
   .sum-section-list .sum-section-item .title {
@@ -7501,6 +7592,23 @@ section.sec-white {
   font-weight: 400;
   font-size: 1.2rem;
   color: #888889; }
+@media screen and (max-width: 991px) {
+  .stat-summary {
+    text-align: center; }
+    .stat-summary .info {
+      position: absolute;
+      top: 25px;
+      right: 0;
+      width: 70px;
+      text-align: right; }
+      .stat-summary .info span {
+        display: block;
+        vertical-align: top; }
+    .stat-summary .main-stat {
+      line-height: 1em;
+      margin-right: 0; }
+    .stat-summary .people-chart {
+      font-size: 5.5rem; } }
 
 .bar-chart {
   position: relative;
@@ -7569,14 +7677,24 @@ section.sec-white {
   color: #032532;
   font-family: "OpenSans";
   text-transform: uppercase;
+  font-weight: 600;
   margin-top: 0; }
+  @media screen and (max-width: 991px) {
+    .sum-section-title {
+      text-align: center; } }
 
 .sum-section-subtitle {
   font-size: 1.2rem;
   color: #888889; }
+  @media screen and (max-width: 991px) {
+    .sum-section-subtitle {
+      text-align: center; } }
 
 .sum-tags {
   text-align: center; }
+  @media screen and (max-width: 991px) {
+    .sum-tags {
+      margin-top: 40px; } }
   .sum-tags .tags-list {
     display: inline-block; }
   .sum-tags .tag {
@@ -7661,8 +7779,10 @@ section.sec-white {
   background: #FFFFFF;
   border: 1px solid #DBE6EB;
   border-radius: 4px;
-  height: 200px;
   overflow: hidden; }
+  @media screen and (min-width: 768px) {
+    .review-box {
+      height: 200px; } }
   .review-box .review-score {
     background-color: #fee;
     height: 200px;
@@ -7717,6 +7837,9 @@ section.sec-white {
         height: 15px;
         margin-right: 10px; }
 
+@media screen and (max-width: 991px) {
+  .reviews-list {
+    margin-top: 40px; } }
 .reviews-list .review-item {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -7729,11 +7852,18 @@ section.sec-white {
     content: "";
     display: block;
     clear: both; }
-  .reviews-list .review-item .col-author, .reviews-list .review-item .col-content {
-    float: left; }
+  @media screen and (min-width: 768px) {
+    .reviews-list .review-item .col-author, .reviews-list .review-item .col-content {
+      float: left; } }
   .reviews-list .review-item .col-author {
-    width: 30%;
-    padding-right: 15px; }
+    text-align: center;
+    padding-bottom: 20px; }
+    @media screen and (min-width: 768px) {
+      .reviews-list .review-item .col-author {
+        width: 30%;
+        padding-right: 15px;
+        text-align: left;
+        padding-bottom: 0; } }
     .reviews-list .review-item .col-author .author-wrap {
       max-width: 160px;
       display: inline-block;
@@ -7750,53 +7880,54 @@ section.sec-white {
     .reviews-list .review-item .col-author .author {
       font-size: 1.2rem;
       color: #28292A; }
-  .reviews-list .review-item .col-content {
-    width: 70%;
-    padding-left: 15px; }
-    .reviews-list .review-item .col-content .review-title {
-      font-weight: 700;
-      font-size: 1.6rem;
-      color: #404142;
-      margin-bottom: 10px; }
-    .reviews-list .review-item .col-content .review-content {
-      color: #1C252E;
-      line-height: 1.5em; }
-    .reviews-list .review-item .col-content .review-bot:after {
-      content: "";
-      display: block;
-      clear: both; }
-    .reviews-list .review-item .col-content .review-bot .date {
-      color: #A7A7A7;
+  @media screen and (min-width: 768px) {
+    .reviews-list .review-item .col-content {
+      width: 70%;
+      padding-left: 15px; } }
+  .reviews-list .review-item .col-content .review-title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #404142;
+    margin-bottom: 10px; }
+  .reviews-list .review-item .col-content .review-content {
+    color: #1C252E;
+    line-height: 1.5em; }
+  .reviews-list .review-item .col-content .review-bot:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .reviews-list .review-item .col-content .review-bot .date {
+    color: #A7A7A7;
+    vertical-align: middle;
+    line-height: 40px; }
+  .reviews-list .review-item .col-content .review-bot .btn-sm {
+    padding: 7px 20px 7px 10px;
+    vertical-align: middle;
+    position: relative;
+    color: #28292A; }
+    .reviews-list .review-item .col-content .review-bot .btn-sm [class*="icon-"] {
       vertical-align: middle;
-      line-height: 40px; }
-    .reviews-list .review-item .col-content .review-bot .btn-sm {
-      padding: 7px 20px 7px 10px;
-      vertical-align: middle;
-      position: relative;
-      color: #28292A; }
-      .reviews-list .review-item .col-content .review-bot .btn-sm [class*="icon-"] {
-        vertical-align: middle;
-        margin-right: 10px; }
-    .reviews-list .review-item .col-content .review-bot .has-count {
-      padding-right: 50px; }
-      .reviews-list .review-item .col-content .review-bot .has-count .count {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        width: 40px;
-        border-left: 1px solid #D1DFE5;
-        padding: 7px 0;
-        text-align: center; }
-      .reviews-list .review-item .col-content .review-bot .has-count.liked {
-        color: #4BC881; }
-        .reviews-list .review-item .col-content .review-bot .has-count.liked .count {
-          background-color: #4BC881;
-          color: #fff; }
-    .reviews-list .review-item .col-content .review-bot .btn-share [class*="icon-"] {
-      color: #5B8ADB; }
-    .reviews-list .review-item .col-content .review-bot .btn-like [class*="icon-"] {
+      margin-right: 10px; }
+  .reviews-list .review-item .col-content .review-bot .has-count {
+    padding-right: 50px; }
+    .reviews-list .review-item .col-content .review-bot .has-count .count {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 40px;
+      border-left: 1px solid #D1DFE5;
+      padding: 7px 0;
+      text-align: center; }
+    .reviews-list .review-item .col-content .review-bot .has-count.liked {
       color: #4BC881; }
+      .reviews-list .review-item .col-content .review-bot .has-count.liked .count {
+        background-color: #4BC881;
+        color: #fff; }
+  .reviews-list .review-item .col-content .review-bot .btn-share [class*="icon-"] {
+    color: #5B8ADB; }
+  .reviews-list .review-item .col-content .review-bot .btn-like [class*="icon-"] {
+    color: #4BC881; }
 
 /** -------- PHOTOS --------*/
 .photo-box {
@@ -7816,6 +7947,11 @@ section.sec-white {
 /** ----------- NEAR SCHOOL ----------- **/
 .neighbor {
   margin-top: 20px; }
+  @media screen and (min-width: 992px) {
+    .neighbor .section-title {
+      float: left; }
+    .neighbor .title-right {
+      float: right; } }
 
 .neighbor-map {
   height: 450px;
@@ -7828,6 +7964,11 @@ section.sec-white {
 .school-list {
   margin-top: 30px; }
 
+@media screen and (max-width: 768px) {
+  .nearby-school-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #D1DFE5; } }
 .nearby-school-item .left {
   width: 90px; }
   .nearby-school-item .left .stars {
@@ -7865,6 +8006,10 @@ section.sec-white {
 section.sec-rental {
   padding-bottom: 60px; }
 
+@media screen and (max-width: 991px) {
+  .rental-item {
+    padding-top: 20px;
+    padding-bottom: 20px; } }
 .rental-item .thumb {
   background-size: cover;
   position: relative;
@@ -8032,6 +8177,89 @@ header {
     margin-left: 15px;
     margin-right: 15px; }
 
+@media screen and (max-width: 991px) {
+  .header-desktop {
+    display: none; } }
+
+.mobile-header {
+  display: none; }
+
+.hamburger-menu {
+  width: 20px;
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  line-height: 40px; }
+  .hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #4E575E;
+    position: absolute;
+    left: 0; }
+  .hamburger-menu .top {
+    top: 0; }
+  .hamburger-menu .middle {
+    top: 50%;
+    margin-top: -1.5px; }
+  .hamburger-menu .bottom {
+    bottom: 0; }
+
+@media screen and (max-width: 991px) {
+  header {
+    height: 60px;
+    padding: 10px 0; }
+
+  .main-header {
+    text-align: center;
+    height: 40px;
+    position: relative; }
+    .main-header #logo {
+      display: inline-block;
+      padding-left: 40px;
+      padding-right: 40px;
+      height: 100%; }
+      .main-header #logo img {
+        height: 100%; }
+
+  .mobile-header {
+    display: block;
+    color: #4E575E;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+    .mobile-header a {
+      color: #4E575E; }
+    .mobile-header .mobile-search {
+      float: right;
+      font-size: 2rem;
+      line-height: 40px;
+      vertical-align: middle; }
+    .mobile-header .mobile-menu {
+      float: left;
+      height: 40px;
+      line-height: 40px; }
+
+  .breakcrumb {
+    position: relative; }
+    .breakcrumb:after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: -webkit-linear-gradient(left, transparent 0%, #0C3D5F 70%, #0C3D5F 100%);
+      background: linear-gradient(to right, transparent 0%, #0C3D5F 70%, #0C3D5F 100%)
+      /* Standard syntax */ }
+    .breakcrumb .container {
+      white-space: nowrap;
+      overflow: hidden; } }
 footer {
   background-color: #15314E;
   font-size: 14px;
@@ -8047,6 +8275,11 @@ footer {
   footer .footer-about .btn-signup {
     margin: 40px 0 60px 0;
     min-width: 120px; }
+  @media (max-width: 991px) {
+    footer .footer-about {
+      text-align: center; }
+      footer .footer-about .logo {
+        width: 200px !important; } }
   footer .follow {
     margin-bottom: 15px; }
     footer .follow .widget-title {
@@ -8054,7 +8287,11 @@ footer {
       margin-right: 20px; }
     @media (max-width: 767px) {
       footer .follow {
-        margin-bottom: 30px; } }
+        margin-bottom: 30px;
+        text-align: left; }
+        footer .follow .widget-title {
+          display: block;
+          margin-right: 0; } }
   footer .social-icon {
     display: inline-block;
     width: 36px;
@@ -8080,6 +8317,9 @@ footer {
       content: "";
       display: inline-block;
       width: 100%; }
+    @media (max-width: 767px) {
+      footer .footer-column-row {
+        text-align: left; } }
   footer .footer-column-list, footer .footer-column-form {
     padding: 0 15px;
     display: inline-block;
@@ -8089,6 +8329,9 @@ footer {
       width: 100%;
       text-align: center;
       margin-bottom: 30px; } }
+  @media (max-width: 767px) {
+    footer .footer-column-list {
+      width: 47%; } }
   footer .footer-list {
     margin-bottom: 30px; }
     footer .footer-list ul {

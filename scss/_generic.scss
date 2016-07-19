@@ -128,6 +128,12 @@ $colors: (
   }
 }
 
+@media screen and (max-width: $screen-sm-max){
+  .hidden-mobile{
+    display: none !important;
+  }
+}
+
 /* ----- summary ----- */
 .school-header{
   background-image: url("../img/header-bg.png");
@@ -141,6 +147,18 @@ $colors: (
 
 .breakcrumb{
   padding: 10px 0;
+  position: relative;
+  background-color: #0C3D5F;
+
+  // &:before{
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: 0;
+  // }
   .bc-item{
     color: #fff;
     font-size: 1.2rem;
@@ -164,16 +182,121 @@ $colors: (
   .school-info{
     padding-bottom: 15px;
     .school-name{
-      font-size: 3.6rem;
-      padding-top: 60px;
+      font-size: 2.2rem;
+      text-align: center;
+      @media screen and (min-width: $screen-md-min){
+        font-size: 3.6rem;
+        padding-top: 60px; 
+        text-align: left;
+      }
+      @media screen and (max-width: $screen-sm-max){
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
     }
     .detail-info{
       font-size: 1.2rem;
+      text-align: center;
+      span{
+        margin-bottom: 10px;
+      }
+      @media screen and (min-width: $screen-md-min){
+        text-align: left;
+      }
+      @media screen and (max-width: $screen-sm-max){
+        .sep{
+          display: none;
+        }
+        .loc{
+          display: block;
+        }
+        .phone, .link{
+          width: 25px;
+          height: 25px;
+          line-height: 25px;
+          font-size: 1.2rem;
+          vertical-align: middle;
+          padding: 0;
+          text-align: center;
+          a{
+            display: block;
+            width: 100%;
+          }
+        }
+        .link-round{
+          width: 25px;
+          height: 25px;
+          line-height: 25px;
+        }
+      }
     }
     .statistic{
       padding-top: 40px;
-
+      @media screen and (max-width: $screen-sm-max){
+        .stat-item{
+          display: block;
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 0;
+          padding-bottom: 0;
+          &:after{
+            content: "";
+            display: block;
+            clear: both;
+          }
+        }
+        .stat-sep{
+          display: block;
+          width: 100%;
+          height: 1px;
+        }
+        .stat-lbl{
+          display: block;
+          float: left;
+          width: 60%;
+          text-align: left;
+          line-height: 2.4rem;
+          font-size: 1rem;
+          vertical-align: middle;
+        }
+        .stat-stars{
+          display: block;
+          float: left;
+          width: 40%;
+          text-align: left;
+          .big{
+            line-height: 2.4rem;
+            font-size: 1.2rem;
+            vertical-align: middle;
+          }
+          .stars{
+            margin-top: 0;
+            height: 21px;
+          }
+        }
+        .score-number{
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 2.1rem;
+        }
+        .score-mobile{
+          .stat-lbl{
+            font-size: 1.2rem;
+            color: #fff;
+            line-height: 1.5em;
+          }
+        }
+      }
     }
+  }
+}
+
+@media screen and (min-width: $screen-md-min){
+  .score-mobile{
+    display: none !important;
   }
 }
 
@@ -353,6 +476,9 @@ section.sec-white{
   color: $heading-color;
   margin-bottom: 30px;
   line-height: 1em;
+  @media screen and (max-width: $screen-sm-max){
+    text-align: center;
+  }
 }
 .title-right{
   line-height: 2.6rem;
@@ -432,6 +558,7 @@ section.sec-white{
   .sum-section-item{
     border-bottom: 1px solid #D1DFE5;
     padding: 25px 0 15px 0;
+    position: relative;
     &:after{
       content: "";
       display: block;
@@ -440,13 +567,11 @@ section.sec-white{
     &:hover{
       background-color: darken(#fff, 1%);
     }
-    .col-heading{
-      width: 50%;
-      float: left;
-    }
-    .col-content{
-      width: 50%;
-      float: left;
+    .col-heading, .col-content{
+      @media screen and (min-width: screen-md-min){
+        width: 50%;
+        float: left;
+      }
     }
     .heading-wrapper{
       width: 60%;
@@ -479,6 +604,28 @@ section.sec-white{
     font-weight: 400;
     font-size: 1.2rem;
     color: $unhighlight;
+  }
+  @media screen and (max-width: $screen-sm-max){
+    text-align: center;
+    .info{
+      position: absolute;
+      top: 25px;
+      right: 0;
+      width: 70px;
+      text-align: right;
+      span{
+        display: block;
+        vertical-align: top;
+      }
+    }
+    .main-stat{
+      line-height: 1em;
+      margin-right: 0;
+    }
+
+    .people-chart{
+      font-size: 5.5rem;
+    }
   }
 }
 
@@ -561,15 +708,25 @@ section.sec-white{
   color: $dark-primary; // #1C252E;
   font-family: $font-body;
   text-transform: uppercase;
+  font-weight: $text-bold;
   margin-top: 0;
+  @media screen and (max-width: $screen-sm-max){
+    text-align: center;
+  }
 }
 .sum-section-subtitle{
   font-size: 1.2rem;
   color: $unhighlight;
+  @media screen and (max-width: $screen-sm-max){
+    text-align: center;
+  }
 }
 
 .sum-tags{
   text-align: center;
+  @media screen and (max-width: $screen-sm-max){
+    margin-top: 40px;
+  }
   .tags-list{
     display: inline-block;
   }
@@ -679,8 +836,10 @@ section.sec-white{
   background: #FFFFFF;
   border: 1px solid $border-gray;
   border-radius: 4px;
-  height: 200px;
   overflow: hidden;
+  @media screen and (min-width: $screen-sm-min){
+    height: 200px;
+  }
 
   .review-score{
     background-color: #fee;
@@ -756,6 +915,9 @@ section.sec-white{
 }
 
 .reviews-list{
+  @media screen and (max-width: $screen-sm-max){
+    margin-top: 40px;
+  }
   .review-item{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -771,12 +933,20 @@ section.sec-white{
       display: block;
       clear: both;
     }
-    .col-author, .col-content{
-      float: left;
+    @media screen and (min-width: $screen-sm-min){
+      .col-author, .col-content{
+        float: left;
+      } 
     }
     .col-author{
-      width: 30%;
-      padding-right: 15px;
+      text-align: center;
+      padding-bottom: 20px;
+      @media screen and (min-width: $screen-sm-min){
+        width: 30%;
+        padding-right: 15px;
+        text-align: left;
+        padding-bottom: 0;
+      }
       .author-wrap{
         max-width: 160px;
         display: inline-block;
@@ -799,8 +969,10 @@ section.sec-white{
       }
     }
     .col-content{
-      width: 70%;
-      padding-left: 15px;
+      @media screen and (min-width: $screen-sm-min){
+        width: 70%;
+        padding-left: 15px;
+      }
       .review-title{
         font-weight: $text-heavy;
         font-size: 1.6rem;
@@ -889,6 +1061,14 @@ section.sec-white{
 /** ----------- NEAR SCHOOL ----------- **/
 .neighbor{
   margin-top: 20px;
+  @media screen and (min-width: $screen-md-min){
+    .section-title{
+      float: left;
+    }
+    .title-right{
+      float: right;
+    }
+  }
 }
 .neighbor-map{
   height: 450px;
@@ -904,6 +1084,11 @@ section.sec-white{
   margin-top: 30px;
 }
 .nearby-school-item{
+  @media screen and (max-width: $screen-sm-min){
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $border-color;
+  }
   .left{
     width: 90px;
     .stars{
@@ -941,6 +1126,10 @@ section.sec-rental{
   padding-bottom: 60px;
 }
 .rental-item{
+  @media screen and (max-width: $tablet-max){
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .thumb{
     background-size: cover;
     position: relative;

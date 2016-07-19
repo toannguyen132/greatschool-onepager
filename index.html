@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreatSchool</title>
     <link rel="stylesheet" href="css/default.css">
 </head>
@@ -12,6 +13,18 @@
                 <a href="#" id="logo">
                     <img src="img/logo.svg" alt="Greatschool">
                 </a>
+                <div class="mobile-header">
+                    <div class="mobile-menu">
+                        <div class="hamburger-menu">
+                            <span class="top"></span>
+                            <span class="middle"></span>
+                            <span class="bottom"></span>
+                        </div>
+                    </div>
+                    <div class="mobile-search">
+                        <a href="#"><span class="icon-search"></span></a>
+                    </div>
+                </div>
                 <div class="header-search header-desktop">
                     <div class="line-one">
                         <div class="search-box">
@@ -80,29 +93,35 @@
                     </span>
                     <span class="sep"></span>
                     <span class="phone">
-                        <a href="#">
-                            <span class="icon-phone"></span> &nbsp; 
-                            415-123-4567
+                        <a href="tel:415-123-4567">
+                            <span class="icon-phone"></span>
+                            <span class="hidden-mobile"> &nbsp; 415-123-4567</span>
                         </a>
                     </span>
                     <span class="sep"></span>
                     <span class="link">
-                        <a href="#"><span class="icon-globe"></span> &nbsp; www.willowglenhighschool.com</a>
+                        <a href="www.willowglenhighschool.com" target="_blank"><span class="icon-globe"></span><span class="hidden-mobile"> &nbsp; www.willowglenhighschool.com</span></a>
                     </span>
                     <span class="sep"></span>
                     <span class="more-detail">
                         <a href="#">
                             <span class="link-round">+</span>
-                            More Detail
+                            <span class="hidden-mobile">More Detail</span>
                         </a>
                     </span>
                 </div>
                 <div class="statistic">
-                    <div class="score stat-item">
+                    <div class="score stat-item hidden-mobile">
                         <span class="score-number">8</span>
                         <div class="lbl">
                             GREATSCHOOLS <br> RATING 
                             <span class="round-icon hint-btn hint tlp" title="The Greatschools rating measures English language arts, and science test scores for students at this school compared to all students statewide." ><span class="icon-hint"></span></span>
+                        </div>
+                    </div>
+                    <div class="stat-item score-mobile">
+                        <div class="stat-lbl upcase">GREATSCHOOLS <br> RATING </div>
+                        <div class="stat-stars">
+                            <span class="score-number">8</span>
                         </div>
                     </div>
                     <div class="stat-sep"></div>
@@ -154,7 +173,7 @@
                         <h2 class="section-title">School Summary</h2>
                         <div class="summary-box">
                             <div class="row">
-                                <div class="col-xs-4 col">
+                                <div class="col-md-4 col">
                                     <div class="sum-line">
                                         <span class="round-icon circle-number">9</span>
                                         Test score
@@ -172,7 +191,7 @@
                                         Advance Course Offering
                                     </div>
                                 </div>
-                                <div class="col-xs-4 col">
+                                <div class="col-md-4 col">
                                     <div class="sum-line">
                                         <span class="round-icon circle-number">9</span>
                                         Test score
@@ -190,7 +209,7 @@
                                         Advance Course Offering
                                     </div>
                                 </div>
-                                <div class="col-xs-4 col">
+                                <div class="col-md-4 col">
                                     <div class="sum-line">
                                         <span class="circle-icon icon-circle-user"></span>
                                         Teachers
@@ -490,7 +509,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sidebar">
+                <div class="col-md-3 col-sidebar hidden-xs hidden-sm">
                     <div id="context_hint" class="context-hint hided sidebar-widget">
                         <div class="part-sum">
                             <div class="sum-rate">
@@ -558,7 +577,7 @@
                 <div class="col-md-9 col-main">
                     <div class="school-reviews">
                         <div class="review-box">
-                            <div class="col-xs-3 review-score">
+                            <div class="col-sm-3 review-score">
                                 <div class="lbl">Review</div>
                                 <div class="score">4.0</div>
                                 <div class="stars-rate">
@@ -572,7 +591,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-9 review-range">
+                            <div class="col-sm-9 review-range">
                                 <div class="review-range-sum">
                                     <span class="icon icon-user"></span> <span class="sum">60 total</span>
                                 </div>
@@ -785,8 +804,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 class="section-title pull-left">Neighborhood</h2>
-                        <div class="pull-right title-right"><a href="#">See this school's attendance zone</a></div>
+                        <h2 class="section-title">Neighborhood</h2>
+                        <div class="title-right hidden-mobile"><a href="#">See this school's attendance zone</a></div>
                     </div>
                 </div>
             </div>
