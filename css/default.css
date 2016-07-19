@@ -8230,14 +8230,22 @@ header {
     border-top: 0; }
   .mobile-menu-content .menu-item {
     display: block;
-    border-top: 1px solid #D1DFE5; }
+    border-top: 1px solid #D1DFE5;
+    overflow: hidden; }
     .mobile-menu-content .menu-item a {
       display: block;
       padding: 20px;
-      color: #585859; }
-    .mobile-menu-content .menu-item .sub-menu a {
-      color: #28292A;
-      padding: 20px 20px 20px 40px; }
+      color: #585859;
+      text-decoration: none; }
+    .mobile-menu-content .menu-item .sub-menu {
+      max-height: 0;
+      -webkit-transition: 300ms max-height;
+              transition: 300ms max-height; }
+      .mobile-menu-content .menu-item .sub-menu a {
+        color: #28292A;
+        padding: 20px 20px 20px 40px; }
+    .mobile-menu-content .menu-item.active .sub-menu {
+      max-height: 300px; }
 
 .header-bg {
   position: absolute;

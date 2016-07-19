@@ -183,16 +183,25 @@ header{
   .menu-item{
     display: block;
     border-top: 1px solid $border-color;
+    overflow: hidden;
     a{
       display: block;
       padding: 20px;
       color: #585859;
+      text-decoration: none;
     }
     .sub-menu{
+      max-height: 0;
+      transition: 300ms max-height;
       a{
         color: #28292A;
         padding: 20px 20px 20px 40px;
-      } 
+      }
+    }
+    &.active{
+      .sub-menu{
+        max-height: 300px;
+      }
     }
   }
 }

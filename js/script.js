@@ -71,6 +71,10 @@
 			e.preventDefault();
 			$('body').toggleClass('menu-opened');
 		})
+		$('.mobile-menu-content > ul > .menu-item > a').on('click', function(e){
+			e.preventDefault();
+			$(e.currentTarget).parent().toggleClass('active');
+		});
 	});
 
 })(jQuery);
