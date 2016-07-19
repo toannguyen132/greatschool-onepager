@@ -65,6 +65,12 @@
 		}
 
 		sidebar_context();
+
+		// mobile
+		$('.hamburger-menu').on('click', function(e){
+			e.preventDefault();
+			$('body').toggleClass('menu-opened');
+		})
 	});
 
 })(jQuery);

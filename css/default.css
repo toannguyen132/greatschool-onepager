@@ -8089,7 +8089,12 @@ section.sec-rental {
 
 /* ----- header ------ */
 header {
-  padding: 15px 0; }
+  padding: 15px 0;
+  position: relative; }
+
+.main-header {
+  position: relative;
+  z-index: 10; }
 
 @media screen and (min-width: 992px) {
   .header-search #logo {
@@ -8190,7 +8195,8 @@ header {
   display: inline-block;
   position: relative;
   vertical-align: middle;
-  line-height: 40px; }
+  line-height: 40px;
+  text-decoration: none; }
   .hamburger-menu span {
     display: block;
     width: 100%;
@@ -8207,15 +8213,84 @@ header {
   .hamburger-menu .bottom {
     bottom: 0; }
 
+.mobile-menu-content {
+  display: none; }
+
+.mobile-menu-content {
+  overflow-y: auto; }
+  .mobile-menu-content ul {
+    list-style: none;
+    list-style-image: none;
+    list-style-position: outside;
+    padding: 0; }
+  .mobile-menu-content > ul > li > a {
+    text-transform: uppercase;
+    font-weight: 700; }
+  .mobile-menu-content > ul > li:first-child {
+    border-top: 0; }
+  .mobile-menu-content .menu-item {
+    display: block;
+    border-top: 1px solid #D1DFE5; }
+    .mobile-menu-content .menu-item a {
+      display: block;
+      padding: 20px;
+      color: #585859; }
+    .mobile-menu-content .menu-item .sub-menu a {
+      color: #28292A;
+      padding: 20px 20px 20px 40px; }
+
+.header-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 10; }
+
+body.menu-opened {
+  overflow: hidden; }
+
 @media screen and (max-width: 991px) {
   header {
     height: 60px;
-    padding: 10px 0; }
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; }
+
+  .header-bg {
+    border-bottom: 1px solid #D1DFE5; }
+
+  body {
+    padding-top: 60px; }
+
+  .mobile-menu-content {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    background-color: #fff;
+    padding-top: 60px;
+    z-index: 9;
+    -webkit-transition: 200ms -webkit-transform linear;
+            transition: 200ms transform linear; }
+
+  body.menu-opened .mobile-menu-content {
+    -webkit-transform: translate(0, 100%);
+        -ms-transform: translate(0, 100%);
+            transform: translate(0, 100%); }
 
   .main-header {
     text-align: center;
-    height: 40px;
-    position: relative; }
+    height: 40px; }
     .main-header #logo {
       display: inline-block;
       padding-left: 40px;
