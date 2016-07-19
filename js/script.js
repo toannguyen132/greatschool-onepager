@@ -16,8 +16,21 @@
 		// tootip
 		$('.tlp').tooltipster({
 			maxWidth: 300,
-			debug: false
+			debug: false,
 		});
+		var adjustTootip = function(){
+			if (Modernizr.touchevents)	{
+				$('.tlp').tooltipster('option', 'trigger', 'click');	
+				console.log('tét');
+			} else {
+				$('.tlp').tooltipster('option', 'trigger', 'mouseenter');
+			}
+		};
+		$(window).resize(function(){setTimeout(adjustTootip, 10)});
+		setTimeout(adjustTootip, 10);
+		$('.tlp').click(function(e){
+			e.preventDefault();
+		})
 
 		$('.tooltip-chart').tooltipster({
 			content: $('#tootip_1').detach(),
