@@ -31,11 +31,11 @@
 		$('.tlp').click(function(e){
 			e.preventDefault();
 		})
-
 		$('.tooltip-chart').tooltipster({
 			content: $('#tootip_1').detach(),
 			contentCloning: true
 		});
+		// end tooltip
 
 		var isMobile = $(window).width() <= 768;
 
@@ -82,8 +82,14 @@
 		// mobile
 		$('.hamburger-menu').on('click', function(e){
 			e.preventDefault();
+			$('body').removeClass('search-opened');
 			$('body').toggleClass('menu-opened');
-		})
+		});
+		$('.mobile-search a').on('click', function(e){
+			e.preventDefault();
+			$('body').removeClass('menu-opened');
+			$('body').toggleClass('search-opened');
+		});
 		$('.mobile-menu-content > ul > .menu-item > a').on('click', function(e){
 			e.preventDefault();
 			$(e.currentTarget).parent().toggleClass('active');
