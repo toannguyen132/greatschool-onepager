@@ -72,7 +72,7 @@
 
 				var top = $('body').scrollTop();
 				var pos_left = $context.parent().offset().left; // 15 is padding
-				var pos_top = 30;
+				var pos_top = 0;
 				var ctxHeight = $context.height();
 
 				if ( top > anchor ){
@@ -97,7 +97,7 @@
 					}
 				}
 
-				var placeholder = ctxHeight + 70;
+				var placeholder = ctxHeight + 40;
 
 				// sidebar widget
 				$('.floating-widget').each(function(){
@@ -119,7 +119,7 @@
 					if ( top > anchor && bottom < limit){
 						element.css({
 							"position": 'fixed',
-							"top": ctxHeight + 70,
+							"top": ctxHeight + 40,
 							"left": pos_left
 						});
 						if ( !$body.hasClass('floated-widget') ){
