@@ -48,6 +48,11 @@
 			var parent = $(e.currentTarget).closest('.mobile-modal');
 			parent.mobileModal('close');
 		});
+		$('.mobile-modal .filter-trigger').click(function(e){
+			e.preventDefault();
+			var parent = $(e.currentTarget).closest('.modal-filter');
+			parent.toggleClass('opened');
+		})
 
 		var isMobile = $(window).width() <= 768;
 

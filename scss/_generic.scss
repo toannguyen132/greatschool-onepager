@@ -1286,6 +1286,88 @@ section.sec-rental{
     border-radius: 0;
     box-shadow: none;
   }
+
+  .modal-filter{
+    $filter-height: 64px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 27px;
+    .filter-bar{
+      padding: 10px 20px;
+      height: $filter-height;
+      background: #EDF3F5;
+      position: relative;
+      @include bt(1px, #E4ECF0);
+      label{
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #888889;
+        text-transform: uppercase;
+        margin-right: 10px;
+      }
+    }
+    .filter-value{
+      font-weight: $text-heavy;
+      font-size: 1.4rem;
+      color: #28292A;
+      .value{
+        margin-right: 10px;
+      }
+    }
+
+    &.opened {
+      .modal-filter-list{
+        transform: translate(0,0);
+      }
+      .modal-filter-overlay{
+        opacity: 1;
+        visibility: visible
+      }
+    }
+
+    .modal-filter-overlay{
+      background-color: rgba(0,0,0,0.8);
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: 300ms all;
+    }
+
+    .modal-filter-list{
+      position: absolute;
+      bottom: $filter-height;
+      left: 0;
+      width: 100%;
+      padding: 0 20px;
+      overflow: hidden;
+      background-color: #fff;
+      transition: 300ms all linear;
+      transform: translate(0,100%);
+      .filter-item{
+        padding: 10px 0;
+        position: relative;
+        @include bb(1px, $border-color);
+        &:last-child{
+          @include bb(0px, $border-color);
+        }
+        .text{
+          font-size: 14px;
+          color: #28292A;
+        }
+        .radio-btn{
+          position: absolute;
+          right: 0;
+          top: 10px;
+        }
+      }
+    }
+  }
 }
 
 .modal-bar-chart{

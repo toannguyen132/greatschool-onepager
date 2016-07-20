@@ -17,7 +17,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 2,
+                "order": 48,
                 "id": 47,
                 "name": "close",
                 "prevSize": 32,
@@ -42,7 +42,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 4,
+                "order": 49,
                 "id": 0,
                 "name": "pinterest",
                 "prevSize": 32,
@@ -67,7 +67,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 3,
+                "order": 50,
                 "id": 1,
                 "name": "rss",
                 "prevSize": 32,
@@ -92,7 +92,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 2,
+                "order": 51,
                 "id": 2,
                 "name": "youtube",
                 "prevSize": 32,
@@ -124,7 +124,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 20,
+                "order": 52,
                 "id": 3,
                 "name": "check",
                 "prevSize": 32,
@@ -157,7 +157,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 18,
+                "order": 53,
                 "id": 4,
                 "name": "next",
                 "prevSize": 32,
@@ -190,7 +190,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 17,
+                "order": 54,
                 "id": 5,
                 "name": "prev",
                 "prevSize": 32,
@@ -223,7 +223,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 3,
+                "order": 55,
                 "id": 6,
                 "name": "balance",
                 "prevSize": 32,
@@ -275,7 +275,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 4,
+                "order": 56,
                 "id": 7,
                 "name": "ball",
                 "prevSize": 32,
@@ -308,7 +308,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 5,
+                "order": 57,
                 "id": 8,
                 "name": "book",
                 "prevSize": 32,
@@ -344,7 +344,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 6,
+                "order": 58,
                 "id": 9,
                 "name": "box",
                 "prevSize": 32,
@@ -376,7 +376,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 8,
+                "order": 59,
                 "id": 10,
                 "name": "circle-facebook",
                 "prevSize": 32,
@@ -413,7 +413,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 9,
+                "order": 60,
                 "id": 11,
                 "name": "document",
                 "prevSize": 32,
@@ -450,7 +450,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 10,
+                "order": 61,
                 "id": 12,
                 "name": "graduation",
                 "prevSize": 32,
@@ -483,7 +483,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 11,
+                "order": 62,
                 "id": 13,
                 "name": "heart",
                 "prevSize": 32,
@@ -516,7 +516,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 12,
+                "order": 63,
                 "id": 14,
                 "name": "house",
                 "prevSize": 32,
@@ -556,7 +556,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 14,
+                "order": 64,
                 "id": 15,
                 "name": "pie",
                 "prevSize": 32,
@@ -588,7 +588,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 16,
+                "order": 95,
                 "id": 16,
                 "name": "shield",
                 "prevSize": 32,
@@ -620,7 +620,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 2,
+                "order": 65,
                 "id": 17,
                 "name": "up",
                 "prevSize": 32,
@@ -658,7 +658,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 5,
+                "order": 66,
                 "id": 18,
                 "prevSize": 32,
                 "code": 59674,
@@ -692,7 +692,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 3,
+                "order": 67,
                 "id": 19,
                 "prevSize": 32,
                 "code": 59676,
@@ -726,7 +726,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 2,
+                "order": 68,
                 "id": 20,
                 "prevSize": 32,
                 "code": 59675,
@@ -761,7 +761,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 41,
+                "order": 69,
                 "id": 21,
                 "prevSize": 32,
                 "code": 59668,
@@ -795,7 +795,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 42,
+                "order": 70,
                 "id": 22,
                 "prevSize": 32,
                 "code": 59669,
@@ -829,7 +829,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 43,
+                "order": 71,
                 "id": 23,
                 "prevSize": 32,
                 "code": 59670,
@@ -864,7 +864,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 44,
+                "order": 72,
                 "id": 24,
                 "prevSize": 32,
                 "code": 59671,
@@ -899,7 +899,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 45,
+                "order": 73,
                 "id": 25,
                 "prevSize": 32,
                 "code": 59672,
@@ -934,7 +934,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 46,
+                "order": 74,
                 "id": 26,
                 "prevSize": 32,
                 "code": 59673,
@@ -969,7 +969,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 40,
+                "order": 75,
                 "id": 27,
                 "prevSize": 32,
                 "code": 59667,
@@ -1002,7 +1002,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 32,
+                "order": 76,
                 "id": 28,
                 "prevSize": 32,
                 "code": 59666,
@@ -1036,7 +1036,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 31,
+                "order": 77,
                 "id": 29,
                 "prevSize": 32,
                 "code": 59665,
@@ -1070,7 +1070,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 22,
+                "order": 78,
                 "id": 30,
                 "prevSize": 32,
                 "code": 59648,
@@ -1104,7 +1104,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 23,
+                "order": 79,
                 "id": 31,
                 "prevSize": 32,
                 "code": 59649,
@@ -1138,7 +1138,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 24,
+                "order": 80,
                 "id": 32,
                 "prevSize": 32,
                 "code": 59650,
@@ -1172,7 +1172,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 25,
+                "order": 81,
                 "id": 33,
                 "prevSize": 32,
                 "code": 59651,
@@ -1206,7 +1206,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 26,
+                "order": 83,
                 "id": 34,
                 "prevSize": 32,
                 "code": 59652,
@@ -1240,7 +1240,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 27,
+                "order": 84,
                 "id": 35,
                 "prevSize": 32,
                 "code": 59653,
@@ -1274,7 +1274,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 28,
+                "order": 85,
                 "id": 36,
                 "prevSize": 32,
                 "code": 59654,
@@ -1308,7 +1308,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 29,
+                "order": 86,
                 "id": 37,
                 "prevSize": 32,
                 "code": 59655,
@@ -1342,7 +1342,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 30,
+                "order": 87,
                 "id": 38,
                 "prevSize": 32,
                 "code": 59656,
@@ -1383,7 +1383,7 @@
                 {}
             ],
             "properties": {
-                "order": 15,
+                "order": 88,
                 "id": 39,
                 "prevSize": 32,
                 "code": 59657,
@@ -1392,6 +1392,33 @@
             "setIdx": 0,
             "setId": 2,
             "iconIdx": 40
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M585.143 694.857q0 14.857-10.857 25.714t-25.714 10.857h-512q-14.857 0-25.714-10.857t-10.857-25.714 10.857-25.714l256-256q10.857-10.857 25.714-10.857t25.714 10.857l256 256q10.857 10.857 10.857 25.714z"
+                ],
+                "width": 585.1440086364746,
+                "attrs": [],
+                "isMulticolor": false,
+                "isMulticolor2": false,
+                "tags": [
+                    "caret-up"
+                ],
+                "defaultCode": 61656,
+                "grid": 14
+            },
+            "attrs": [],
+            "properties": {
+                "name": "caret-up",
+                "id": 48,
+                "order": 47,
+                "prevSize": 32,
+                "code": 61656
+            },
+            "setIdx": 0,
+            "setId": 2,
+            "iconIdx": 41
         },
         {
             "icon": {
@@ -1417,7 +1444,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 16,
+                "order": 89,
                 "id": 40,
                 "prevSize": 32,
                 "code": 59658,
@@ -1425,7 +1452,7 @@
             },
             "setIdx": 0,
             "setId": 2,
-            "iconIdx": 41
+            "iconIdx": 42
         },
         {
             "icon": {
@@ -1451,7 +1478,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 17,
+                "order": 90,
                 "id": 41,
                 "prevSize": 32,
                 "code": 59659,
@@ -1459,7 +1486,7 @@
             },
             "setIdx": 0,
             "setId": 2,
-            "iconIdx": 42
+            "iconIdx": 43
         },
         {
             "icon": {
@@ -1485,7 +1512,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 18,
+                "order": 91,
                 "id": 42,
                 "prevSize": 32,
                 "code": 59660,
@@ -1493,7 +1520,7 @@
             },
             "setIdx": 0,
             "setId": 2,
-            "iconIdx": 43
+            "iconIdx": 44
         },
         {
             "icon": {
@@ -1519,7 +1546,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 19,
+                "order": 92,
                 "id": 43,
                 "prevSize": 32,
                 "code": 59661,
@@ -1527,7 +1554,7 @@
             },
             "setIdx": 0,
             "setId": 2,
-            "iconIdx": 44
+            "iconIdx": 45
         },
         {
             "icon": {
@@ -1553,7 +1580,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 20,
+                "order": 93,
                 "id": 44,
                 "prevSize": 32,
                 "code": 59662,
@@ -1561,7 +1588,7 @@
             },
             "setIdx": 0,
             "setId": 2,
-            "iconIdx": 45
+            "iconIdx": 46
         },
         {
             "icon": {
@@ -1587,7 +1614,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 21,
+                "order": 94,
                 "id": 45,
                 "prevSize": 32,
                 "code": 59663,
@@ -1595,7 +1622,7 @@
             },
             "setIdx": 0,
             "setId": 2,
-            "iconIdx": 46
+            "iconIdx": 47
         },
         {
             "icon": {
@@ -1621,7 +1648,7 @@
             },
             "attrs": [],
             "properties": {
-                "order": 14,
+                "order": 82,
                 "id": 46,
                 "prevSize": 32,
                 "code": 59664,
@@ -1629,7 +1656,7 @@
             },
             "setIdx": 0,
             "setId": 2,
-            "iconIdx": 47
+            "iconIdx": 48
         }
     ],
     "height": 1024,

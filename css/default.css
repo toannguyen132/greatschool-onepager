@@ -6680,6 +6680,9 @@ button.close {
 .icon-caret-down:before {
   content: "\e909"; }
 
+.icon-caret-up:before {
+  content: "\f0d8"; }
+
 .icon-circle-equity:before {
   content: "\e90a"; }
 
@@ -8139,6 +8142,74 @@ section.sec-rental {
     border: 0;
     border-radius: 0;
     box-shadow: none; }
+  .mobile-modal .modal-filter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 27px; }
+    .mobile-modal .modal-filter .filter-bar {
+      padding: 10px 20px;
+      height: 64px;
+      background: #EDF3F5;
+      position: relative;
+      border-top: 1px solid #E4ECF0; }
+      .mobile-modal .modal-filter .filter-bar label {
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #888889;
+        text-transform: uppercase;
+        margin-right: 10px; }
+    .mobile-modal .modal-filter .filter-value {
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: #28292A; }
+      .mobile-modal .modal-filter .filter-value .value {
+        margin-right: 10px; }
+    .mobile-modal .modal-filter.opened .modal-filter-list {
+      -webkit-transform: translate(0, 0);
+          -ms-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    .mobile-modal .modal-filter.opened .modal-filter-overlay {
+      opacity: 1;
+      visibility: visible; }
+    .mobile-modal .modal-filter .modal-filter-overlay {
+      background-color: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: 300ms all;
+              transition: 300ms all; }
+    .mobile-modal .modal-filter .modal-filter-list {
+      position: absolute;
+      bottom: 64px;
+      left: 0;
+      width: 100%;
+      padding: 0 20px;
+      overflow: hidden;
+      background-color: #fff;
+      -webkit-transition: 300ms all linear;
+              transition: 300ms all linear;
+      -webkit-transform: translate(0, 100%);
+          -ms-transform: translate(0, 100%);
+              transform: translate(0, 100%); }
+      .mobile-modal .modal-filter .modal-filter-list .filter-item {
+        padding: 10px 0;
+        position: relative;
+        border-bottom: 1px solid #D1DFE5; }
+        .mobile-modal .modal-filter .modal-filter-list .filter-item:last-child {
+          border-bottom: 0px solid #D1DFE5; }
+        .mobile-modal .modal-filter .modal-filter-list .filter-item .text {
+          font-size: 14px;
+          color: #28292A; }
+        .mobile-modal .modal-filter .modal-filter-list .filter-item .radio-btn {
+          position: absolute;
+          right: 0;
+          top: 10px; }
 
 .modal-bar-chart {
   padding: 15px 0; }
