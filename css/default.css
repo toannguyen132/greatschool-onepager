@@ -7291,12 +7291,12 @@ h2, h3 {
   .school-header .school-info .detail-info {
     font-size: 1.2rem;
     text-align: center; }
-    .school-header .school-info .detail-info span {
-      margin-bottom: 10px; }
     @media screen and (min-width: 992px) {
       .school-header .school-info .detail-info {
         text-align: left; } }
     @media screen and (max-width: 991px) {
+      .school-header .school-info .detail-info span {
+        margin-bottom: 10px; }
       .school-header .school-info .detail-info .sep {
         display: none; }
       .school-header .school-info .detail-info .loc {
@@ -8718,4 +8718,5 @@ footer {
     footer .tag:hover {
       text-decoration: none;
       background-color: #112336; }
+
 /*# sourceMappingURL=default.css.map */

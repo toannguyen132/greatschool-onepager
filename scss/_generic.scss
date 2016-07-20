@@ -208,13 +208,13 @@ $colors: (
     .detail-info{
       font-size: 1.2rem;
       text-align: center;
-      span{
-        margin-bottom: 10px;
-      }
       @media screen and (min-width: $screen-md-min){
         text-align: left;
       }
       @media screen and (max-width: $screen-sm-max){
+        span{
+          margin-bottom: 10px;
+        }
         .sep{
           display: none;
         }
