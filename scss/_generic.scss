@@ -134,6 +134,12 @@ $colors: (
   }
 }
 
+@media screen and (min-width: $screen-md-min){
+  .hidden-desktop{
+    display: none !important;
+  }
+}
+
 /* ----- summary ----- */
 .school-header{
   background-image: url("../img/header-bg.jpg");
@@ -592,6 +598,23 @@ section.sec-white{
 
     &:last-child{
       border-bottom: 0;
+    }
+    .below{
+      font-size: 1.3rem;
+      margin-top: 10px;
+      line-height: 2.5rem;
+      vertical-align: middle;
+      color: $primary;
+      .sep{
+        height: 15px;
+        line-height: 2.5rem;
+        display: inline-block;
+        width: 1px;
+        background-color: $primary;
+        margin-left: 10px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
     }
   }
 }
@@ -1288,7 +1311,7 @@ section.sec-rental{
   }
 
   .modal-filter{
-    $filter-height: 64px;
+    $filter-height: 54px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1320,10 +1343,12 @@ section.sec-rental{
     &.opened {
       .modal-filter-list{
         transform: translate(0,0);
+        opacity: 1;
+        visibility: visible;
       }
       .modal-filter-overlay{
         opacity: 1;
-        visibility: visible
+        visibility: visible;
       }
     }
 
@@ -1347,8 +1372,10 @@ section.sec-rental{
       padding: 0 20px;
       overflow: hidden;
       background-color: #fff;
-      transition: 300ms all linear;
-      transform: translate(0,100%);
+      transition: 300ms all;
+      transform: translate(0, 20px);
+      opacity: 0;
+      visibility: hidden;
       .filter-item{
         padding: 10px 0;
         position: relative;

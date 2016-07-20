@@ -7239,6 +7239,9 @@ h2, h3 {
 @media screen and (max-width: 991px) {
   .hidden-mobile {
     display: none !important; } }
+@media screen and (min-width: 992px) {
+  .hidden-desktop {
+    display: none !important; } }
 /* ----- summary ----- */
 .school-header {
   background-image: url("../img/header-bg.jpg");
@@ -7591,6 +7594,21 @@ section.sec-white {
     color: #888889; }
   .sum-section-list .sum-section-item:last-child {
     border-bottom: 0; }
+  .sum-section-list .sum-section-item .below {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    line-height: 2.5rem;
+    vertical-align: middle;
+    color: #0E81C7; }
+    .sum-section-list .sum-section-item .below .sep {
+      height: 15px;
+      line-height: 2.5rem;
+      display: inline-block;
+      width: 1px;
+      background-color: #0E81C7;
+      margin-left: 10px;
+      margin-right: 10px;
+      vertical-align: middle; }
 
 .stat-summary .main-stat {
   font-weight: 700;
@@ -8150,7 +8168,7 @@ section.sec-rental {
     line-height: 27px; }
     .mobile-modal .modal-filter .filter-bar {
       padding: 10px 20px;
-      height: 64px;
+      height: 54px;
       background: #EDF3F5;
       position: relative;
       border-top: 1px solid #E4ECF0; }
@@ -8169,7 +8187,9 @@ section.sec-rental {
     .mobile-modal .modal-filter.opened .modal-filter-list {
       -webkit-transform: translate(0, 0);
           -ms-transform: translate(0, 0);
-              transform: translate(0, 0); }
+              transform: translate(0, 0);
+      opacity: 1;
+      visibility: visible; }
     .mobile-modal .modal-filter.opened .modal-filter-overlay {
       opacity: 1;
       visibility: visible; }
@@ -8186,17 +8206,19 @@ section.sec-rental {
               transition: 300ms all; }
     .mobile-modal .modal-filter .modal-filter-list {
       position: absolute;
-      bottom: 64px;
+      bottom: 54px;
       left: 0;
       width: 100%;
       padding: 0 20px;
       overflow: hidden;
       background-color: #fff;
-      -webkit-transition: 300ms all linear;
-              transition: 300ms all linear;
-      -webkit-transform: translate(0, 100%);
-          -ms-transform: translate(0, 100%);
-              transform: translate(0, 100%); }
+      -webkit-transition: 300ms all;
+              transition: 300ms all;
+      -webkit-transform: translate(0, 20px);
+          -ms-transform: translate(0, 20px);
+              transform: translate(0, 20px);
+      opacity: 0;
+      visibility: hidden; }
       .mobile-modal .modal-filter .modal-filter-list .filter-item {
         padding: 10px 0;
         position: relative;
