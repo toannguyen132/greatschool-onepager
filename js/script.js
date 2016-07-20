@@ -60,16 +60,20 @@
 		var sidebar_context = function(){
 			var $context = $('#context_hint');
 			var offset = $context.offset().top;
-			var anchor = offset + $context.outerHeight();
+			var padding = 15;
+			var anchor = offset - 15;
+			var $body = $('body');
 
 			$context.css('width', $context.width() ); // 30 is padding
+			$('.floating-widget').css('width', $context.width() );
 			// console.log(offset);
 			var updateSidebar = function(){
 				if ( isMobile ) return;
 
 				var top = $('body').scrollTop();
-				var pos_left = $context.parent().offset().left + 15; // 15 is padding
+				var pos_left = $context.parent().offset().left; // 15 is padding
 				var pos_top = 30;
+				var ctxHeight = $context.height();
 
 				if ( top > anchor ){
 					$context.removeClass('hided');
@@ -78,6 +82,9 @@
 						"top": pos_top,
 						"left": pos_left
 					});
+					if ( !$body.hasClass('floated-widget') ){
+						$body.addClass('floated-widget');
+					}
 				} else {
 					$context.addClass('hided');
 					$context.css({
@@ -85,7 +92,53 @@
 						"top": 'auto',
 						"left": 'auto'
 					});
+					if ( $body.hasClass('floated-widget') ){
+						$body.removeClass('floated-widget');
+					}
 				}
+
+				var placeholder = ctxHeight + 70;
+
+				// sidebar widget
+				$('.floating-widget').each(function(){
+					var element = $(this);
+					var parent = element.closest('.row');
+					var limit = parent.offset().top + parent.height();
+					var anchor = $context.css('position') == 'fixed' ? parent.offset().top - placeholder : parent.offset().top;
+					var eleHeight = element.height();
+					var pos_top = parent.height() - eleHeight;  //parent.offset().top + ctxHeight + 70;
+					var bottom = top + eleHeight + placeholder;
+
+					// console.log('************************')
+					// console.log('top:' + top);
+					// console.log('anchor:' + anchor);
+					// console.log('bottom:' + bottom);
+					// console.log('limit:' + limit);
+					// console.log('pos_top:' + pos_top);
+
+					if ( top > anchor && bottom < limit){
+						element.css({
+							"position": 'fixed',
+							"top": ctxHeight + 70,
+							"left": pos_left
+						});
+						if ( !$body.hasClass('floated-widget') ){
+							$body.addClass('floated-widget');
+						}
+					} else if (bottom > limit) {
+						element.css({
+							"position": 'absolute',
+							"top": pos_top,
+							"left": 'auto'
+						});
+					} else {
+						element.css({
+							"position": 'relative',
+							"top": 'auto',
+							"left": 'auto'
+						});
+					}
+				});
 			}
 
 			updateSidebar();

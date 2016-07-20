@@ -577,7 +577,7 @@ section.sec-white{
       background-color: darken(#fff, 1%);
     }
     .col-heading, .col-content{
-      @media screen and (min-width: screen-md-min){
+      @media screen and (min-width: $screen-md-min){
         width: 50%;
         float: left;
       }
@@ -786,6 +786,13 @@ section.sec-white{
 }
 
 /** --------- SIDEBAR --------- **/
+.sidebar-wrapper{
+  position: relative;
+}
+.placeholder{
+  width: 100%;
+  height: 1px;
+}
 .sidebar-widget{
   margin-bottom: 40px;
   img{
@@ -795,15 +802,21 @@ section.sec-white{
 .col-sidebar{
   position: relative;
 }
+
+.floating-widget{
+  // width: 100%;
+}
 .context-hint{
   background: #fff;
   box-shadow: 0px 23px 27px 0px rgba(0,0,0,0.09);
+  z-index: 11;
 
   &.hided .part-sum{
     max-height: 0;
   }
 
   .part-sum{
+    display: none;
     max-height: 500px;
     transition: all 700ms;
     overflow: hidden;
@@ -1198,9 +1211,22 @@ section.sec-rental{
 /** --------- OTHERS --------- **/
 .hint-btn{
   cursor: pointer;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 10px;
+  color: #fff;
+  background-color: #C1D2D9;
   &:hover{
     background-color: rgba(0, 0, 0, 0.8)
   }
+}
+
+.centerized{
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
 }
 
 // tooltip theme
@@ -1304,10 +1330,11 @@ section.sec-rental{
     }
   }
   .modal-content{
-    padding: 25px;
+    padding: 25px 25px 70px 25px;
     border: 0;
     border-radius: 0;
     box-shadow: none;
+    height: 80%;
   }
 
   .modal-filter{
