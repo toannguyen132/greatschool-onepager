@@ -63,6 +63,7 @@
 			var padding = 15;
 			var anchor = offset - 15;
 			var $body = $('body');
+			var $contextParent = $context.closest('.row')
 
 			$context.css('width', $context.width() ); // 30 is padding
 			$('.floating-widget').css('width', $context.width() );
@@ -74,8 +75,16 @@
 				var pos_left = $context.parent().offset().left; // 15 is padding
 				var pos_top = 0;
 				var ctxHeight = $context.height();
+				var limit = $('')
+				var bottom = top + $context.height(); 
+				var limitAnchor = $('.end-of-context');
+				var limitPadding = (limitAnchor.outerHeight() - limitAnchor.height()) / 2;
+				var contextLimit = limitAnchor.offset().top + limitAnchor.outerHeight() - limitPadding;
 
-				if ( top > anchor ){
+				console.log('********************');
+				console.log(contextLimit);
+
+				if ( top > anchor && bottom < contextLimit ){
 					$context.removeClass('hided');
 					$context.css({
 						"position": 'fixed',
@@ -85,6 +94,12 @@
 					if ( !$body.hasClass('floated-widget') ){
 						$body.addClass('floated-widget');
 					}
+				}else if ( bottom > contextLimit ){
+					$context.css({
+						"position": 'absolute',
+						"top": contextLimit - $contextParent.offset().top - $context.height(),
+						"left": 'auto'
+					});
 				} else {
 					$context.addClass('hided');
 					$context.css({
