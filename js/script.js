@@ -37,6 +37,18 @@
 		});
 		// end tooltip
 
+		// modal trigger
+		$('.mobile-modal-trigger').click(function(e){
+			e.preventDefault();
+			var target = $($(e.currentTarget).attr('data-modal'));
+			target.mobileModal();
+		});
+		$('.mobile-modal .close').click(function(e){
+			e.preventDefault();
+			var parent = $(e.currentTarget).closest('.mobile-modal');
+			parent.mobileModal('close');
+		});
+
 		var isMobile = $(window).width() <= 768;
 
 		// sidebar
@@ -95,5 +107,26 @@
 			$(e.currentTarget).parent().toggleClass('active');
 		});
 	});
+
+	$.fn.mobileModal = function( action, option ){
+		var action = action || 'open';
+		var $this = $(this);
+		if ( $this.hasClass('opened') ){
+			action = 'close';
+		}
+
+		var open = function(){
+			$this.addClass('opened');
+		}
+		var close = function(){
+			$this.removeClass('opened');
+		}
+
+		if ( action == 'open' ){
+			open();
+		} else if ( action == 'close' ){
+			close();
+		}
+	}
 
 })(jQuery);

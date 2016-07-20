@@ -7631,6 +7631,12 @@ section.sec-white {
     position: absolute;
     left: 0;
     bottom: 0; }
+    .bar-chart .bar-fg .lbl {
+      position: absolute;
+      right: 10px;
+      text-align: right;
+      vertical-align: middle;
+      color: #fff; }
   .bar-chart .bar-avg {
     display: inline-block;
     position: absolute;
@@ -8092,6 +8098,59 @@ section.sec-rental {
   .tooltip-bar-table table td {
     padding: 4px 0;
     vertical-align: middle; }
+
+/***  modal ***/
+.mobile-modal {
+  opacity: 0;
+  visibility: hidden; }
+
+.mobile-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100;
+  -webkit-transition: 300ms opacity, 300ms visibility;
+          transition: 300ms opacity, 300ms visibility; }
+  .mobile-modal.opened {
+    opacity: 1;
+    visibility: visible; }
+  .mobile-modal .modal-header {
+    background: #EDF3F5;
+    border: 1px solid #E4ECF0;
+    padding: 20px 40px 20px 25px;
+    position: relative; }
+    .mobile-modal .modal-header .modal-title {
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: #000000;
+      line-height: 24px; }
+    .mobile-modal .modal-header .close {
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      font-size: 1.4rem;
+      color: #404142;
+      opacity: 1; }
+  .mobile-modal .modal-content {
+    padding: 25px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none; }
+
+.modal-bar-chart {
+  padding: 15px 0; }
+  .modal-bar-chart .chart-content .bar-chart {
+    width: 100%;
+    height: 20px;
+    margin-top: 5px; }
+    .modal-bar-chart .chart-content .bar-chart .bar-bg {
+      height: 20px;
+      background-color: #E4ECF0; }
+    .modal-bar-chart .chart-content .bar-chart .bar-fg {
+      height: 20px; }
 
 /* ----- header ------ */
 header {
