@@ -7235,9 +7235,12 @@ h2, h3 {
     display: none !important; } }
 /* ----- summary ----- */
 .school-header {
-  background-image: url("../img/header-bg.png");
+  background-image: url("../img/header-bg.jpg");
   background-size: cover;
   color: #fff; }
+  @media screen and (max-width: 991px) {
+    .school-header {
+      background-image: url("../img/header-bg-sm.jpg"); } }
   .school-header a {
     color: #fff;
     text-decoration: none; }
@@ -8216,6 +8219,9 @@ header {
 .mobile-menu-content {
   display: none; }
 
+.mobile-search-content {
+  display: none; }
+
 .mobile-menu-content {
   overflow-y: auto; }
   .mobile-menu-content ul {
@@ -8298,23 +8304,7 @@ body.menu-opened {
   body {
     padding-top: 60px; }
 
-  .mobile-menu-content {
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: -100%;
-    left: 0;
-    -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-            transform: translate(0, 0);
-    background-color: #fff;
-    padding-top: 60px;
-    z-index: 9;
-    -webkit-transition: 200ms -webkit-transform linear;
-            transition: 200ms transform linear; }
-
-  .mobile-search-content {
+  .mobile-menu-content, .mobile-search-content {
     display: block;
     position: fixed;
     width: 100%;
@@ -8333,9 +8323,8 @@ body.menu-opened {
             transition: 200ms opacity linear, 200ms visibility linear; }
 
   body.menu-opened .mobile-menu-content {
-    -webkit-transform: translate(0, 100%);
-        -ms-transform: translate(0, 100%);
-            transform: translate(0, 100%); }
+    opacity: 1;
+    visibility: visible; }
 
   body.search-opened .mobile-search-content {
     opacity: 1;

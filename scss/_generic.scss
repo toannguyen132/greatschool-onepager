@@ -136,9 +136,12 @@ $colors: (
 
 /* ----- summary ----- */
 .school-header{
-  background-image: url("../img/header-bg.png");
+  background-image: url("../img/header-bg.jpg");
   background-size: cover;
   color: #fff;
+  @media screen and (max-width: $screen-sm-max){
+    background-image: url("../img/header-bg-sm.jpg");
+  }
   a{
     color: #fff;
     text-decoration: none;
