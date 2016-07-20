@@ -15,3 +15,16 @@
 @mixin border-radius( $size ){
 
 }
+
+@mixin bb($dep,$color){
+  border-bottom: $dep solid $color;
+}
+@mixin bt($dep,$color){
+  border-top: $dep solid $color;
+}
+@mixin br($dep,$color){
+  border-right: $dep solid $color;
+}
+@mixin bl($dep,$color){
+  border-left: $dep solid $color;
+}

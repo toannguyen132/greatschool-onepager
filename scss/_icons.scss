@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close:before {
+    content: "\e92f";
+}
 .icon-pinterest:before {
     content: "\e92c";
 }

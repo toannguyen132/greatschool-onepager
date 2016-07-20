@@ -146,7 +146,7 @@ header{
     width: 100%;
     height: 3px;
     border-radius: 5px;
-    background-color: #4E575E;
+    background-color: $mi-color;
     position: absolute;
     left: 0;
   }
@@ -251,6 +251,55 @@ body.menu-opened{
     }
   }
 }
+.search-container{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.search-form{
+  $sf-height: 80px;
+  position: relative;
+  @include bb(1px, $border-color);
+  [class*="icon-"]{
+    font-size: 2.2rem;
+    color: $mi-color;
+  }
+  .do-search, .do-close{
+    height: $sf-height;
+    line-height: $sf-height+6;
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 40px;
+  }
+  .do-search{
+    left: 20px;
+    text-align: left;
+  }
+  .do-close{
+    right: 20px;
+    text-align: right;
+  }
+  input{
+    display: block;
+    width: 100%;
+    height: $sf-height;
+    padding: 20px 40px;
+    font-size: 1.6rem;
+    line-height: 25px;
+    outline: none;
+  }
+}
+
+.search-suggest{
+  .search-suggest-item{
+    @include bb(1px, $border-color);
+    padding: 15px 20px;
+    font-size: 1.6rem;
+    line-height: 22px;
+    color: #585859;
+  }
+}
 
 @media screen and (max-width: $screen-sm-max){
   $header-height: 60px;
@@ -333,13 +382,13 @@ body.menu-opened{
 
   .mobile-header{
     display: block;
-    color: #4E575E;
+    color: $mi-color;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    a { color: #4E575E; text-decoration: none; }
+    a { color: $mi-color; text-decoration: none; }
     .mobile-search{
       float: right;
       font-size: 2rem;
