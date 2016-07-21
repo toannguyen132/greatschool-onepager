@@ -7617,6 +7617,8 @@ section.sec-white {
     font-size: 25px;
     vertical-align: middle;
     display: inline-block; }
+  .school-summary .summary-box a {
+    text-decoration: none; }
 
 .sum-section {
   margin-top: 50px;
