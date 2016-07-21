@@ -201,6 +201,17 @@
 			});
 		});
 
+		// scroll 
+		$('.scroll-trigger').click(function(e){
+			e.preventDefault();
+			var $this = $(this);
+			var $target = $($this.attr('href'));
+
+			$('html, body').animate({
+			    scrollTop: $target.offset().top
+			}, 600);
+		});
+
 		// mobile
 		$('.hamburger-menu').on('click', function(e){
 			e.preventDefault();
