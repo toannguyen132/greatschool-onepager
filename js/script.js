@@ -53,6 +53,11 @@
 			var parent = $(e.currentTarget).closest('.modal-filter');
 			parent.toggleClass('opened');
 		});
+		$('.mobile-modal .filter-item').click(function(e){
+			e.preventDefault();
+			$(this).addClass('active');
+			$(this).siblings().removeClass('active');
+		});
 
 		var isMobile = $(window).width() <= 768;
 

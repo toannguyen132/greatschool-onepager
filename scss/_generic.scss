@@ -1574,6 +1574,7 @@ section.sec-rental{
 			}
 			.filter-item{
 				padding: 10px 0;
+				cursor: pointer;
 				position: relative;
 				@include bb(1px, $border-color);
 				&:last-child{

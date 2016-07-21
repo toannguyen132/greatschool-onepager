@@ -8435,6 +8435,7 @@ section.sec-rental {
           background-color: #fff; } }
       .mobile-modal .modal-filter .modal-filter-list .filter-item {
         padding: 10px 0;
+        cursor: pointer;
         position: relative;
         border-bottom: 1px solid #D1DFE5; }
         .mobile-modal .modal-filter .modal-filter-list .filter-item:last-child {
