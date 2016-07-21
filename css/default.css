@@ -6557,6 +6557,9 @@ button.close {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-trend:before {
+  content: "\e930"; }
+
 .icon-close:before {
   content: "\e92f"; }
 
@@ -7088,7 +7091,7 @@ h2, h3 {
   background-image: -webkit-linear-gradient(90deg, #EAEEF3 0%, #FFFFFF 63%);
   background-image: linear-gradient(0deg, #EAEEF3 0%, #FFFFFF 63%);
   border: 1px solid #C1D2D9;
-  border-radius: 3px 0px 0px 3px;
+  border-radius: 3px 3px;
   padding: 10px 15px;
   color: #0E94C7;
   vertical-align: middle;
@@ -7106,6 +7109,10 @@ h2, h3 {
 
 .btn-sm {
   padding: 7px 20px; }
+
+.btn-xs {
+  padding: 4px 4px;
+  font-size: 1rem; }
 
 .btn-alt {
   background-image: -webkit-linear-gradient(270deg, #FBFDFD 0%, #F6F9FA 100%);
@@ -8154,10 +8161,33 @@ section.sec-rental {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
   z-index: 100;
   -webkit-transition: 300ms opacity, 300ms visibility;
           transition: 300ms opacity, 300ms visibility; }
+  .mobile-modal .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .mobile-modal .modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; }
+    @media screen and (min-width: 992px) {
+      .mobile-modal .modal-container {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        min-width: 768px;
+        width: 750px;
+        height: auto; } }
   .mobile-modal.opened {
     opacity: 1;
     visibility: visible; }
@@ -8171,6 +8201,10 @@ section.sec-rental {
       font-size: 1.8rem;
       color: #000000;
       line-height: 24px; }
+      @media screen and (min-width: 992px) {
+        .mobile-modal .modal-header .modal-title {
+          font-family: "Roboto", serif;
+          text-align: center; } }
     .mobile-modal .modal-header .close {
       position: absolute;
       top: 30px;
@@ -8178,18 +8212,42 @@ section.sec-rental {
       font-size: 1.4rem;
       color: #404142;
       opacity: 1; }
+  .mobile-modal .modal-body {
+    padding: 0;
+    background-color: #F6F9FA; }
+    .mobile-modal .modal-body:after {
+      content: "";
+      display: block;
+      clear: both; }
   .mobile-modal .modal-content {
     padding: 25px 25px 70px 25px;
     border: 0;
     border-radius: 0;
-    box-shadow: none;
-    height: 80%; }
+    box-shadow: none; }
+    .mobile-modal .modal-content .graph-img {
+      margin-top: 40px; }
+    @media screen and (min-width: 992px) {
+      .mobile-modal .modal-content {
+        float: right;
+        width: 60%;
+        height: auto; }
+        .mobile-modal .modal-content .graph-img {
+          margin-top: 100px; } }
+  .mobile-modal .modal-sidebar {
+    position: relative;
+    background-color: #F6F9FA; }
+    @media screen and (min-width: 992px) {
+      .mobile-modal .modal-sidebar {
+        float: left;
+        width: 40%; } }
   .mobile-modal .modal-filter {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     line-height: 27px; }
+    @media screen and (max-width: 991px) {
+      .mobile-modal .modal-filter {
+        position: fixed;
+        bottom: 0;
+        left: 0; } }
     .mobile-modal .modal-filter .filter-bar {
       padding: 10px 20px;
       height: 54px;
@@ -8229,20 +8287,22 @@ section.sec-rental {
       -webkit-transition: 300ms all;
               transition: 300ms all; }
     .mobile-modal .modal-filter .modal-filter-list {
-      position: absolute;
-      bottom: 54px;
-      left: 0;
-      width: 100%;
       padding: 0 20px;
-      overflow: hidden;
-      background-color: #fff;
-      -webkit-transition: 300ms all;
-              transition: 300ms all;
-      -webkit-transform: translate(0, 20px);
-          -ms-transform: translate(0, 20px);
-              transform: translate(0, 20px);
-      opacity: 0;
-      visibility: hidden; }
+      overflow: hidden; }
+      @media screen and (max-width: 991px) {
+        .mobile-modal .modal-filter .modal-filter-list {
+          position: absolute;
+          bottom: 54px;
+          left: 0;
+          width: 100%;
+          -webkit-transition: 300ms all;
+                  transition: 300ms all;
+          -webkit-transform: translate(0, 20px);
+              -ms-transform: translate(0, 20px);
+                  transform: translate(0, 20px);
+          opacity: 0;
+          visibility: hidden;
+          background-color: #fff; } }
       .mobile-modal .modal-filter .modal-filter-list .filter-item {
         padding: 10px 0;
         position: relative;
@@ -8254,8 +8314,39 @@ section.sec-rental {
           color: #28292A; }
         .mobile-modal .modal-filter .modal-filter-list .filter-item .radio-btn {
           position: absolute;
+          display: inline-block;
           right: 0;
-          top: 10px; }
+          top: 10px;
+          width: 25px;
+          height: 25px;
+          border-radius: 25px;
+          background: #EDF3F5;
+          border: 1px solid #C1D2D9; }
+        .mobile-modal .modal-filter .modal-filter-list .filter-item.active .radio-btn:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 17px;
+          height: 17px;
+          border-radius: 20px;
+          left: 3px;
+          top: 3px;
+          background: #0085C4; }
+    .mobile-modal .modal-filter .filter-label {
+      text-transform: uppercase;
+      margin-top: 30px;
+      font-size: 2rem;
+      color: #A7A7A7; }
+    @media screen and (min-width: 992px) {
+      .mobile-modal .modal-filter .modal-filter-overlay {
+        display: none; }
+      .mobile-modal .modal-filter .filter-bar {
+        display: none; }
+      .mobile-modal .modal-filter .modal-filter-list {
+        opacity: 1;
+        -webkit-transform: translate(0);
+            -ms-transform: translate(0);
+                transform: translate(0); } }
 
 .modal-bar-chart {
   padding: 15px 0; }
