@@ -7599,6 +7599,8 @@ section.sec-white {
       float: left; } }
   .sum-section-list .sum-section-item .heading-wrapper {
     width: 80%; }
+    .sum-section-list .sum-section-item .heading-wrapper .btn {
+      margin: 0; }
   .sum-section-list .sum-section-item .title {
     font-weight: 600;
     font-size: 1.6rem;
@@ -7661,7 +7663,7 @@ section.sec-white {
       position: absolute;
       top: 25px;
       right: 0;
-      width: 70px;
+      width: 105px;
       text-align: right; }
       .stat-summary .info span {
         display: block;
@@ -7671,10 +7673,16 @@ section.sec-white {
       margin-right: 0; }
     .stat-summary .people-chart {
       font-size: 5.5rem; } }
+@media screen and (max-width: 767px) {
+  .stat-summary .info {
+    width: 70px; } }
 
 .bar-chart {
   position: relative;
   margin-top: 10px; }
+  @media screen and (max-width: 991px) {
+    .bar-chart {
+      margin-top: 25px; } }
   .bar-chart.inline {
     display: inline-block; }
   .bar-chart .bar-bg {

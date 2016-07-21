@@ -70,6 +70,7 @@
 			// console.log(offset);
 			var updateSidebar = function(){
 				if ( isMobile ) return;
+				console.log('abc');
 
 				var top = $('body').scrollTop();
 				var pos_left = $context.parent().offset().left; // 15 is padding
@@ -81,8 +82,8 @@
 				var limitPadding = (limitAnchor.outerHeight() - limitAnchor.height()) / 2;
 				var contextLimit = limitAnchor.offset().top + limitAnchor.outerHeight() - limitPadding;
 
-				console.log('********************');
-				console.log(contextLimit);
+				// console.log('********************');
+				// console.log(contextLimit);
 
 				if ( top > anchor && bottom < contextLimit ){
 					$context.removeClass('hided');

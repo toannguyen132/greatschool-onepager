@@ -602,6 +602,9 @@ section.sec-white{
 		}
 		.heading-wrapper{
 			width: 80%;
+			.btn{
+				margin: 0;
+			}
 		}
 		.title{
 			font-weight: $text-bold;
@@ -691,7 +694,7 @@ section.sec-white{
 			position: absolute;
 			top: 25px;
 			right: 0;
-			width: 70px;
+			width: 105px;
 			text-align: right;
 			span{
 				display: block;
@@ -707,11 +710,19 @@ section.sec-white{
 			font-size: 5.5rem;
 		}
 	}
+	@media screen and (max-width: $screen-xs-max){
+		.info{
+			width: 70px;
+		}
+	}
 }
 
 .bar-chart{
 	position: relative;
 	margin-top: 10px;
+	@media screen and (max-width: $screen-sm-max){
+		margin-top: 25px;
+	}
 	&.inline{
 		display: inline-block;
 	}
