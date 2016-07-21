@@ -691,7 +691,7 @@ section.sec-white{
 		color: $unhighlight;
 	}
 	@media screen and (max-width: $screen-sm-max){
-		text-align: center;
+		// text-align: center;
 		.info{
 			position: absolute;
 			top: 25px;
@@ -811,14 +811,14 @@ section.sec-white{
 	font-weight: $text-bold;
 	margin-top: 0;
 	@media screen and (max-width: $screen-sm-max){
-		text-align: center;
+		// text-align: center;
 	}
 }
 .sum-section-subtitle{
 	font-size: 1.2rem;
 	color: $unhighlight;
 	@media screen and (max-width: $screen-sm-max){
-		text-align: center;
+		// text-align: center;
 	}
 }
 

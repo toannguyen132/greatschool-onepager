@@ -7731,22 +7731,20 @@ section.sec-white {
   font-size: 1.2rem;
   color: #888889; }
 @media screen and (max-width: 991px) {
-  .stat-summary {
-    text-align: center; }
-    .stat-summary .info {
-      position: absolute;
-      top: 25px;
-      right: 0;
-      width: 105px;
-      text-align: right; }
-      .stat-summary .info span {
-        display: block;
-        vertical-align: top; }
-    .stat-summary .main-stat {
-      line-height: 1em;
-      margin-right: 0; }
-    .stat-summary .people-chart {
-      font-size: 5.5rem; } }
+  .stat-summary .info {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 105px;
+    text-align: right; }
+    .stat-summary .info span {
+      display: block;
+      vertical-align: top; }
+  .stat-summary .main-stat {
+    line-height: 1em;
+    margin-right: 0; }
+  .stat-summary .people-chart {
+    font-size: 5.5rem; } }
 @media screen and (max-width: 767px) {
   .stat-summary .info {
     width: 70px; } }
@@ -7829,16 +7827,10 @@ section.sec-white {
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 0; }
-  @media screen and (max-width: 991px) {
-    .sum-section-title {
-      text-align: center; } }
 
 .sum-section-subtitle {
   font-size: 1.2rem;
   color: #888889; }
-  @media screen and (max-width: 991px) {
-    .sum-section-subtitle {
-      text-align: center; } }
 
 .sum-tags {
   text-align: center; }
