@@ -7730,6 +7730,9 @@ section.sec-white {
   font-weight: 400;
   font-size: 1.2rem;
   color: #888889; }
+@media screen and (max-width: 767px) {
+  .stat-summary {
+    text-align: center; } }
 @media screen and (max-width: 991px) {
   .stat-summary .info {
     position: absolute;
@@ -7827,10 +7830,16 @@ section.sec-white {
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 0; }
+  @media screen and (max-width: 767px) {
+    .sum-section-title {
+      text-align: center; } }
 
 .sum-section-subtitle {
   font-size: 1.2rem;
   color: #888889; }
+  @media screen and (max-width: 767px) {
+    .sum-section-subtitle {
+      text-align: center; } }
 
 .sum-tags {
   text-align: center; }
