@@ -8355,7 +8355,9 @@ section.sec-rental {
     border-radius: 0;
     box-shadow: none; }
     .mobile-modal .modal-content .graph-img {
-      margin-top: 40px; }
+      margin: 10px 0; }
+    .mobile-modal .modal-content img {
+      width: 100%; }
     @media screen and (min-width: 992px) {
       .mobile-modal .modal-content {
         padding: 40px 75px;
@@ -8366,9 +8368,7 @@ section.sec-rental {
         .mobile-modal .modal-content .graph-img {
           margin-top: 20px;
           margin-bottom: 20px;
-          position: relative; }
-        .mobile-modal .modal-content img {
-          width: 100%; } }
+          position: relative; } }
   .mobile-modal .modal-sidebar {
     position: relative;
     background-color: #F6F9FA; }

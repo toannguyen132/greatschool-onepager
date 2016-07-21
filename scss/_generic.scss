@@ -1471,7 +1471,10 @@ section.sec-rental{
 		box-shadow: none;
 
 		.graph-img{
-			margin-top: 40px;
+			margin: 10px 0;	
+		}
+		img{
+			width: 100%;
 		}
 
 		@media screen and (min-width:$screen-md-min){
@@ -1484,9 +1487,6 @@ section.sec-rental{
 				margin-top: 20px;
 				margin-bottom: 20px;
 				position: relative;
-			}
-			img{
-				width: 100%;
 			}
 		}
 	}
