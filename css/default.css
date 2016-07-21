@@ -94,6 +94,8 @@ figure {
 
 hr {
   height: 0;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box; }
 
 pre {
@@ -143,6 +145,8 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
@@ -151,6 +155,8 @@ input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   -webkit-appearance: textfield; }
 
@@ -189,6 +195,7 @@ th {
     color: #000 !important;
     text-shadow: none !important;
     background: transparent !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important; }
 
   a,
@@ -1053,10 +1060,14 @@ th {
   content: "\e260"; }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
@@ -1120,6 +1131,7 @@ img {
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out; }
 
 .img-circle {
@@ -1524,12 +1536,14 @@ kbd {
   color: #fff;
   background-color: #333;
   border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
 kbd kbd {
   padding: 0;
   font-size: 100%;
   font-weight: bold;
+  -webkit-box-shadow: none;
   box-shadow: none; }
 
 pre {
@@ -2474,6 +2488,8 @@ label {
   font-weight: bold; }
 
 input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 input[type="radio"],
@@ -2519,13 +2535,16 @@ output {
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
 
 .form-control:focus {
   border-color: #66afe9;
   outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
 
 .form-control::-moz-placeholder {
@@ -2780,10 +2799,12 @@ select[multiple].input-lg {
 
 .has-success .form-control {
   border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 
 .has-success .form-control:focus {
   border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
 
 .has-success .input-group-addon {
@@ -2808,10 +2829,12 @@ select[multiple].input-lg {
 
 .has-warning .form-control {
   border-color: #8a6d3b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 
 .has-warning .form-control:focus {
   border-color: #66512c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
 
 .has-warning .input-group-addon {
@@ -2836,10 +2859,12 @@ select[multiple].input-lg {
 
 .has-error .form-control {
   border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 
 .has-error .form-control:focus {
   border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
 
 .has-error .input-group-addon {
@@ -2983,6 +3008,7 @@ select[multiple].input-lg {
 .btn.active {
   background-image: none;
   outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
 .btn.disabled,
@@ -2990,6 +3016,7 @@ select[multiple].input-lg {
 fieldset[disabled] .btn {
   cursor: not-allowed;
   filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
   box-shadow: none;
   opacity: .65; }
 
@@ -3350,6 +3377,7 @@ fieldset[disabled] .btn-danger.focus {
 .btn-link[disabled],
 fieldset[disabled] .btn-link {
   background-color: transparent;
+  -webkit-box-shadow: none;
   box-shadow: none; }
 
 .btn-link,
@@ -3407,6 +3435,7 @@ input[type="button"].btn-block {
 .fade {
   opacity: 0;
   -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
   transition: opacity .15s linear; }
 
 .fade.in {
@@ -3429,10 +3458,13 @@ tbody.collapse.in {
   height: 0;
   overflow: hidden;
   -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
   transition-timing-function: ease;
   -webkit-transition-duration: .35s;
+  -o-transition-duration: .35s;
   transition-duration: .35s;
   -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
   transition-property: height, visibility; }
 
 .caret {
@@ -3467,10 +3499,12 @@ tbody.collapse.in {
   text-align: left;
   list-style: none;
   background-color: #fff;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
 
 .dropdown-menu.pull-right {
@@ -3657,9 +3691,11 @@ tbody.collapse.in {
   padding-left: 12px; }
 
 .btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
 .btn-group.open .dropdown-toggle.btn-link {
+  -webkit-box-shadow: none;
   box-shadow: none; }
 
 .btn .caret {
@@ -4103,6 +4139,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   overflow-x: visible;
   -webkit-overflow-scrolling: touch;
   border-top: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
 
 .navbar-collapse.in {
@@ -4112,6 +4149,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-collapse {
     width: auto;
     border-top: 0;
+    -webkit-box-shadow: none;
     box-shadow: none; }
 
   .navbar-collapse.collapse {
@@ -4238,6 +4276,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-top: 0;
     background-color: transparent;
     border: 0;
+    -webkit-box-shadow: none;
     box-shadow: none; }
 
   .navbar-nav .open .dropdown-menu > li > a,
@@ -4269,6 +4308,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-left: -15px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); }
 
 @media (min-width: 768px) {
@@ -4333,6 +4373,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-right: 0;
     margin-left: 0;
     border: 0;
+    -webkit-box-shadow: none;
     box-shadow: none; } }
 .navbar-nav > li > .dropdown-menu {
   margin-top: 0;
@@ -4886,6 +4927,7 @@ a.badge:focus {
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
   transition: border .2s ease-in-out; }
 
 .thumbnail > img,
@@ -4982,6 +5024,11 @@ a.thumbnail.active {
     background-position: 40px 0; }
   to {
     background-position: 0 0; } }
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0; }
+  to {
+    background-position: 0 0; } }
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
@@ -4993,6 +5040,7 @@ a.thumbnail.active {
   overflow: hidden;
   background-color: #f5f5f5;
   border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
 
 .progress-bar {
@@ -5004,19 +5052,24 @@ a.thumbnail.active {
   color: #fff;
   text-align: center;
   background-color: #337ab7;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width .6s ease;
+  -o-transition: width .6s ease;
   transition: width .6s ease; }
 
 .progress-striped .progress-bar,
 .progress-bar-striped {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 40px 40px;
   background-size: 40px 40px; }
 
 .progress.active .progress-bar,
 .progress-bar.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
+  -o-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite; }
 
 .progress-bar-success {
@@ -5024,6 +5077,7 @@ a.thumbnail.active {
 
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-info {
@@ -5031,6 +5085,7 @@ a.thumbnail.active {
 
 .progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-warning {
@@ -5038,6 +5093,7 @@ a.thumbnail.active {
 
 .progress-striped .progress-bar-warning {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .progress-bar-danger {
@@ -5045,6 +5101,7 @@ a.thumbnail.active {
 
 .progress-striped .progress-bar-danger {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
 .media {
@@ -5306,6 +5363,7 @@ button.list-group-item-danger.active:focus {
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
 
 .panel-body {
@@ -5676,6 +5734,7 @@ button.list-group-item-danger.active:focus {
   background-color: #f5f5f5;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
 
 .well blockquote {
@@ -5732,14 +5791,17 @@ button.close {
 
 .modal.fade .modal-dialog {
   -webkit-transition: -webkit-transform .3s ease-out;
+  -o-transition: -o-transform .3s ease-out;
   transition: transform .3s ease-out;
   -webkit-transform: translate(0, -25%);
   -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
   transform: translate(0, -25%); }
 
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
   transform: translate(0, 0); }
 
 .modal-open .modal {
@@ -5754,11 +5816,13 @@ button.close {
 .modal-content {
   position: relative;
   background-color: #fff;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5); }
 
 .modal-backdrop {
@@ -5821,6 +5885,7 @@ button.close {
     margin: 30px auto; }
 
   .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
 
   .modal-sm {
@@ -5966,10 +6031,12 @@ button.close {
   word-wrap: normal;
   white-space: normal;
   background-color: #fff;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   line-break: auto; }
 
@@ -6084,6 +6151,7 @@ button.close {
   position: relative;
   display: none;
   -webkit-transition: .6s ease-in-out left;
+  -o-transition: .6s ease-in-out left;
   transition: .6s ease-in-out left; }
 
 .carousel-inner > .item > img,
@@ -6093,6 +6161,7 @@ button.close {
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-inner > .item {
     -webkit-transition: -webkit-transform .6s ease-in-out;
+    -o-transition: -o-transform .6s ease-in-out;
     transition: transform .6s ease-in-out;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -6163,6 +6232,7 @@ button.close {
 
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
@@ -6172,6 +6242,7 @@ button.close {
   right: 0;
   left: auto;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
@@ -6746,9 +6817,6 @@ button.close {
   /* this ensures that a constrained height set by functionPosition,
   if greater that the natural height of the tooltip, will be enforced
   in browsers that support display:flex */
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   pointer-events: none;
   /* this may be overriden in JS for fixed position origins */
@@ -6757,10 +6825,7 @@ button.close {
 .tooltipster-box {
   /* see .tooltipster-base. flex-shrink 1 is only necessary for IE10-
   and flex-basis auto for IE11- (at least) */
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto; }
+  flex: 1 1 auto; }
 
 .tooltipster-content {
   /* prevents an overflow if the user adds padding to the div */
@@ -6786,6 +6851,9 @@ button.close {
 .tooltipster-fade {
   opacity: 0;
   -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -ms-transition-property: opacity;
   transition-property: opacity; }
 
 .tooltipster-fade.tooltipster-show {
@@ -6794,44 +6862,70 @@ button.close {
 /* grow */
 .tooltipster-grow {
   -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
   -ms-transform: scale(0, 0);
   transform: scale(0, 0);
   -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
   transition-property: transform;
   -webkit-backface-visibility: hidden; }
 
 .tooltipster-grow.tooltipster-show {
   -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15); }
 
 /* swing */
 .tooltipster-swing {
   opacity: 0;
   -webkit-transform: rotateZ(4deg);
+  -moz-transform: rotateZ(4deg);
+  -o-transform: rotateZ(4deg);
   -ms-transform: rotateZ(4deg);
   transform: rotateZ(4deg);
   -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
   transition-property: transform; }
 
 .tooltipster-swing.tooltipster-show {
   opacity: 1;
   -webkit-transform: rotateZ(0deg);
+  -moz-transform: rotateZ(0deg);
+  -o-transform: rotateZ(0deg);
   -ms-transform: rotateZ(0deg);
   transform: rotateZ(0deg);
   -webkit-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 1);
   -webkit-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  -moz-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  -ms-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  -o-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
   transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4); }
 
 /* fall */
 .tooltipster-fall {
   -webkit-transition-property: top;
+  -moz-transition-property: top;
+  -o-transition-property: top;
+  -ms-transition-property: top;
   transition-property: top;
   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15); }
 
 .tooltipster-fall.tooltipster-initial {
@@ -6839,6 +6933,9 @@ button.close {
 
 .tooltipster-fall.tooltipster-dying {
   -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
   transition-property: all;
   top: 0 !important;
   opacity: 0; }
@@ -6846,9 +6943,15 @@ button.close {
 /* slide */
 .tooltipster-slide {
   -webkit-transition-property: left;
+  -moz-transition-property: left;
+  -o-transition-property: left;
+  -ms-transition-property: left;
   transition-property: left;
   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15); }
 
 .tooltipster-slide.tooltipster-initial {
@@ -6856,6 +6959,9 @@ button.close {
 
 .tooltipster-slide.tooltipster-dying {
   -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
   transition-property: all;
   left: 0 !important;
   opacity: 0; }
@@ -6866,63 +6972,33 @@ button.close {
  animationDuration, and we try to avoid collisions and the use
  of !important */
 /* fade */
-@-webkit-keyframes tooltipster-fading {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 @keyframes tooltipster-fading {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
 .tooltipster-update-fade {
-  -webkit-animation: tooltipster-fading 400ms;
-          animation: tooltipster-fading 400ms; }
+  animation: tooltipster-fading 400ms; }
 
 /* rotate */
-@-webkit-keyframes tooltipster-rotating {
-  25% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg); }
-  75% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg); }
-  100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); } }
 @keyframes tooltipster-rotating {
   25% {
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg); }
+    transform: rotate(-2deg); }
   75% {
-    -webkit-transform: rotate(2deg);
-            transform: rotate(2deg); }
+    transform: rotate(2deg); }
   100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); } }
+    transform: rotate(0); } }
 .tooltipster-update-rotate {
-  -webkit-animation: tooltipster-rotating 600ms;
-          animation: tooltipster-rotating 600ms; }
+  animation: tooltipster-rotating 600ms; }
 
 /* scale */
-@-webkit-keyframes tooltipster-scaling {
-  50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
 @keyframes tooltipster-scaling {
   50% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
+    transform: scale(1.1); }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+    transform: scale(1); } }
 .tooltipster-update-scale {
-  -webkit-animation: tooltipster-scaling 600ms;
-          animation: tooltipster-scaling 600ms; }
+  animation: tooltipster-scaling 600ms; }
 
 /**
  * DEFAULT STYLE OF THE SIDETIP PLUGIN
@@ -7091,7 +7167,6 @@ h2, h3 {
   background-color: #48932D; }
 
 .btn {
-  background-image: -webkit-linear-gradient(90deg, #EAEEF3 0%, #FFFFFF 63%);
   background-image: linear-gradient(0deg, #EAEEF3 0%, #FFFFFF 63%);
   border: 1px solid #C1D2D9;
   border-radius: 3px 3px;
@@ -7118,7 +7193,6 @@ h2, h3 {
   font-size: 1rem; }
 
 .btn-alt {
-  background-image: -webkit-linear-gradient(270deg, #FBFDFD 0%, #F6F9FA 100%);
   background-image: linear-gradient(-180deg, #FBFDFD 0%, #F6F9FA 100%);
   border: 1px solid #DBE6EB;
   border-radius: 2px; }
@@ -7609,9 +7683,7 @@ section.sec-white {
   .sum-section-list .sum-section-item .subtitle {
     font-size: 1.2rem;
     color: #888889; }
-  .sum-section-list .sum-section-item:last-child {
-    border-bottom: 0; }
-  .sum-section-list .sum-section-item:nth-child(3) {
+  .sum-section-list .sum-section-item:last-child, .sum-section-list .sum-section-item.last {
     border-bottom: 0; }
   .sum-section-list .sum-section-item .below {
     font-size: 1.3rem;
@@ -7629,8 +7701,7 @@ section.sec-white {
       margin-right: 10px;
       vertical-align: middle; }
 .sum-section-list .sum-section-more {
-  -webkit-transition: 300ms max-height;
-          transition: 300ms max-height;
+  transition: 300ms max-height;
   max-height: 0px;
   overflow: hidden; }
 .sum-section-list .btn-more .expanded {
@@ -7640,7 +7711,7 @@ section.sec-white {
 .sum-section-list.expand .sum-section-more {
   max-height: 500px;
   overflow: hidden; }
-.sum-section-list.expand .sum-section-item:nth-child(3) {
+.sum-section-list.expand .sum-section-item.last {
   border-bottom: 1px solid #D1DFE5; }
 .sum-section-list.expand .btn-more .expanded {
   display: inline-block; }
@@ -7816,8 +7887,7 @@ section.sec-white {
   .context-hint .part-sum {
     display: none;
     max-height: 500px;
-    -webkit-transition: all 700ms;
-            transition: all 700ms;
+    transition: all 700ms;
     overflow: hidden; }
   .context-hint .sum-rate {
     padding: 20px;
@@ -8021,8 +8091,7 @@ section.sec-white {
 .reviews-list-more {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: 400ms max-height;
-          transition: 400ms max-height; }
+  transition: 400ms max-height; }
   .reviews-list-more .review-item:first-child {
     padding-top: 30px;
     border-top: 1px solid #D1DFE5 !important; }
@@ -8160,9 +8229,7 @@ section.sec-rental {
 .centerized {
   position: relative;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
   text-align: center; }
 
 /* This is how you would create a custom secondary theme on top of tooltipster-noir: */
@@ -8222,8 +8289,7 @@ section.sec-rental {
   width: 100%;
   height: 100%;
   z-index: 100;
-  -webkit-transition: 300ms opacity, 300ms visibility;
-          transition: 300ms opacity, 300ms visibility; }
+  transition: 300ms opacity, 300ms visibility; }
   .mobile-modal .modal-overlay {
     position: absolute;
     top: 0;
@@ -8242,9 +8308,7 @@ section.sec-rental {
       .mobile-modal .modal-container {
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         min-width: 768px;
         width: 750px;
         height: auto; } }
@@ -8327,9 +8391,7 @@ section.sec-rental {
       .mobile-modal .modal-filter .filter-value .value {
         margin-right: 10px; }
     .mobile-modal .modal-filter.opened .modal-filter-list {
-      -webkit-transform: translate(0, 0);
-          -ms-transform: translate(0, 0);
-              transform: translate(0, 0);
+      transform: translate(0, 0);
       opacity: 1;
       visibility: visible; }
     .mobile-modal .modal-filter.opened .modal-filter-overlay {
@@ -8344,8 +8406,7 @@ section.sec-rental {
       left: 0;
       opacity: 0;
       visibility: hidden;
-      -webkit-transition: 300ms all;
-              transition: 300ms all; }
+      transition: 300ms all; }
     .mobile-modal .modal-filter .modal-filter-list {
       padding: 0 20px;
       overflow: hidden; }
@@ -8355,11 +8416,8 @@ section.sec-rental {
           bottom: 54px;
           left: 0;
           width: 100%;
-          -webkit-transition: 300ms all;
-                  transition: 300ms all;
-          -webkit-transform: translate(0, 20px);
-              -ms-transform: translate(0, 20px);
-                  transform: translate(0, 20px);
+          transition: 300ms all;
+          transform: translate(0, 20px);
           opacity: 0;
           visibility: hidden;
           background-color: #fff; } }
@@ -8404,9 +8462,7 @@ section.sec-rental {
         display: none; }
       .mobile-modal .modal-filter .modal-filter-list {
         opacity: 1;
-        -webkit-transform: translate(0);
-            -ms-transform: translate(0);
-                transform: translate(0); } }
+        transform: translate(0); } }
 
 .modal-bar-chart {
   padding: 15px 0; }
@@ -8447,7 +8503,6 @@ header {
     height: 50px;
     vertical-align: top; }
   .search-box .cat {
-    background-image: -webkit-linear-gradient(270deg, #FFFFFF 50%, #F3F9FA 100%);
     background-image: linear-gradient(-180deg, #FFFFFF 50%, #F3F9FA 100%);
     padding: 15px 45px 15px 15px;
     position: relative;
@@ -8575,8 +8630,7 @@ header {
       text-decoration: none; }
     .mobile-menu-content .menu-item .sub-menu {
       max-height: 0;
-      -webkit-transition: 300ms max-height;
-              transition: 300ms max-height; }
+      transition: 300ms max-height; }
       .mobile-menu-content .menu-item .sub-menu a {
         color: #28292A;
         padding: 20px 20px 20px 40px; }
@@ -8683,14 +8737,11 @@ body.menu-opened {
     left: 0;
     opacity: 0;
     visibility: hidden;
-    -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
     background-color: #fff;
     padding-top: 60px;
     z-index: 9;
-    -webkit-transition: 200ms opacity linear, 200ms visibility linear;
-            transition: 200ms opacity linear, 200ms visibility linear; }
+    transition: 200ms opacity linear, 200ms visibility linear; }
 
   body.menu-opened .mobile-menu-content {
     opacity: 1;
@@ -8742,8 +8793,7 @@ body.menu-opened {
       position: absolute;
       right: 0;
       top: 0;
-      background: -webkit-linear-gradient(left, transparent 0%, #0C3D5F 70%, #0C3D5F 100%);
-      background: linear-gradient(to right, transparent 0%, #0C3D5F 70%, #0C3D5F 100%)
+      background: linear-gradient(to right, transparent 0%, #0C3D5F 70%, #0C3D5F 100%);
       /* Standard syntax */ }
     .breakcrumb .container {
       white-space: nowrap;
@@ -8753,7 +8803,7 @@ footer {
   font-size: 14px;
   color: #AAB4BF;
   line-height: 17px;
-  padding: 70px 0
+  padding: 70px 0;
   /** right **/ }
   @media (max-width: 767px) {
     footer {
@@ -8864,8 +8914,7 @@ footer {
     color: rgba(255, 255, 255, 0.6);
     line-height: 1em;
     display: inline-block;
-    -webkit-transition: all 300ms;
-            transition: all 300ms; }
+    transition: all 300ms; }
     footer .tag:hover {
       text-decoration: none;
       background-color: #112336; }

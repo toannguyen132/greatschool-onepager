@@ -617,12 +617,10 @@ section.sec-white{
 			color: $unhighlight;
 		}
 
-		&:last-child{
+		&:last-child, &.last{
 			border-bottom: 0;
 		}
-		&:nth-child(3){
-			border-bottom: 0;
-		}
+		
 		.below{
 			font-size: 1.3rem;
 			margin-top: 10px;
@@ -662,7 +660,7 @@ section.sec-white{
 			max-height: 500px;
 			overflow: hidden;
 		}
-		.sum-section-item:nth-child(3){
+		.sum-section-item.last {
 			border-bottom: 1px solid #D1DFE5;
 		}
 		.btn-more {
