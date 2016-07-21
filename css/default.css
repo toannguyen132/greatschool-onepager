@@ -7618,7 +7618,8 @@ section.sec-white {
     vertical-align: middle;
     display: inline-block; }
   .school-summary .summary-box a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #0E81C7; }
 
 .sum-section {
   margin-top: 50px;
@@ -8170,7 +8171,7 @@ section.sec-white {
     border-radius: 50px;
     font-size: 2rem; }
 .nearby-school-item .info {
-  padding-left: 15px; }
+  padding-left: 90px; }
   .nearby-school-item .info .school-name {
     font-weight: 600;
     font-size: 1.6rem;
@@ -8181,6 +8182,8 @@ section.sec-white {
     color: #707171;
     letter-spacing: 0px;
     line-height: 20px; }
+  .nearby-school-item .info .actions, .nearby-school-item .info .actions a {
+    color: #0E81C7; }
 
 /** ---------- RENTAL ---------- **/
 section.sec-rental {

@@ -543,6 +543,7 @@ section.sec-white{
 		}
 		a{
 			text-decoration: none;
+			color: $primary;
 		}
 	}
 }
@@ -1243,7 +1244,7 @@ section.sec-white{
 		}
 	}
 	.info{
-		padding-left: $default-padding;
+		padding-left: 90px;
 		.school-name{
 			font-weight: $text-bold;
 			font-size: 1.6rem;
@@ -1255,6 +1256,9 @@ section.sec-white{
 			color: #707171;
 			letter-spacing: 0px;
 			line-height: 20px;
+		}
+		.actions, .actions a{
+			color: $primary;
 		}
 	}
 }
