@@ -43,7 +43,7 @@
 			var target = $($(e.currentTarget).attr('data-modal'));
 			target.mobileModal();
 		});
-		$('.mobile-modal .close').click(function(e){
+		$('.mobile-modal .close, .mobile-modal .modal-overlay').click(function(e){
 			e.preventDefault();
 			var parent = $(e.currentTarget).closest('.mobile-modal');
 			parent.mobileModal('close');
@@ -52,7 +52,7 @@
 			e.preventDefault();
 			var parent = $(e.currentTarget).closest('.modal-filter');
 			parent.toggleClass('opened');
-		})
+		});
 
 		var isMobile = $(window).width() <= 768;
 

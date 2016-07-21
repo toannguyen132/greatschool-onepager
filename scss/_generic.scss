@@ -1419,7 +1419,7 @@ section.sec-rental{
 			left: 50%;
 			transform: translate(-50%, -50%);
 			min-width: $screen-sm-min; 
-			width: 750px;
+			width: 80%;
 			height: auto;
 		}
 	}
@@ -1475,11 +1475,18 @@ section.sec-rental{
 		}
 
 		@media screen and (min-width:$screen-md-min){
+			padding: 40px 75px;
 			float: right;
-			width: 60%;
-			height: auto;
+			width: 80%;
+			min-height: 450px;
+			text-align: left;
 			.graph-img{
-				margin-top: 100px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				position: relative;
+			}
+			img{
+				width: 100%;
 			}
 		}
 	}
@@ -1489,7 +1496,7 @@ section.sec-rental{
 		background-color: #F6F9FA;
 		@media screen and (min-width:$screen-md-min){
 			float: left;
-			width: 40%;
+			width: 20%;
 		}
 	}
 

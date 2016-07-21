@@ -8316,7 +8316,7 @@ section.sec-rental {
         left: 50%;
         transform: translate(-50%, -50%);
         min-width: 768px;
-        width: 750px;
+        width: 80%;
         height: auto; } }
   .mobile-modal.opened {
     opacity: 1;
@@ -8358,18 +8358,24 @@ section.sec-rental {
       margin-top: 40px; }
     @media screen and (min-width: 992px) {
       .mobile-modal .modal-content {
+        padding: 40px 75px;
         float: right;
-        width: 60%;
-        height: auto; }
+        width: 80%;
+        min-height: 450px;
+        text-align: left; }
         .mobile-modal .modal-content .graph-img {
-          margin-top: 100px; } }
+          margin-top: 20px;
+          margin-bottom: 20px;
+          position: relative; }
+        .mobile-modal .modal-content img {
+          width: 100%; } }
   .mobile-modal .modal-sidebar {
     position: relative;
     background-color: #F6F9FA; }
     @media screen and (min-width: 992px) {
       .mobile-modal .modal-sidebar {
         float: left;
-        width: 40%; } }
+        width: 20%; } }
   .mobile-modal .modal-filter {
     width: 100%;
     line-height: 27px; }
