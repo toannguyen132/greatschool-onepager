@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-flag:before {
+    content: "\e931";
+}
 .icon-trend:before {
     content: "\e930";
 }

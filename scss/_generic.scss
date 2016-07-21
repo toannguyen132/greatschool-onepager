@@ -1042,7 +1042,7 @@ section.sec-white{
 			text-align: center;
 			padding-bottom: 20px;
 			@media screen and (min-width: $screen-sm-min){
-				width: 30%;
+				width: 25%;
 				padding-right: 15px;
 				text-align: left;
 				padding-bottom: 0;
@@ -1070,7 +1070,7 @@ section.sec-white{
 		}
 		.col-content{
 			@media screen and (min-width: $screen-sm-min){
-				width: 70%;
+				width: 75%;
 				padding-left: 15px;
 			}
 			.review-title{
@@ -1096,10 +1096,12 @@ section.sec-white{
 					line-height: 40px;
 				}
 				.btn-sm{
+					font-weight: $text-bold;
 					padding: $v-padding 20px $v-padding 10px;
 					vertical-align: middle;
 					position: relative;
 					color: $heading-gray;
+					outline: none;
 					[class*="icon-"]{
 						vertical-align: middle;
 						margin-right: 10px;
@@ -1131,8 +1133,32 @@ section.sec-white{
 				.btn-like [class*="icon-"]{
 					color: $green-like;
 				}
+				.btn-report [class*="icon-"]{
+					color: #EA6549;
+				}
 			}
 		}
+	}
+}
+
+.reviews-list-more{
+	max-height: 0;
+	overflow: hidden;
+	transition: 400ms max-height;
+	.review-item:first-child{
+		padding-top: 30px;
+		border-top: 1px solid $border-color !important;
+	}
+	&.expand{
+		max-height: 600px;
+	}
+}
+.btn-review-more{
+	.collapsed{ display: inline}
+	.expanded{ display: none}
+	&.expand{
+		.collapsed{ display: none}
+		.expanded{ display: inline}
 	}
 }
 

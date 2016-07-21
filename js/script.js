@@ -169,7 +169,36 @@
 			var $target = $(this).closest('.sum-section-list');
 			$target.toggleClass('expand');
 		});
+		$('.btn-review-more').on('click', function(){
+			var $target = $(this).prev();
+			$(this).toggleClass('expand')
+			$target.toggleClass('expand');
+		})
 
+		// review button
+		$('.review-item .btn-like').each(function(){
+			var element = $(this);
+			var count = 0;
+			if ( element.hasClass('has-count') ){
+				count = parseInt(element.find('.count').text());
+			}
+			element.on('click', function(e){
+				e.preventDefault();
+				count += element.hasClass('liked') ? -1 : 1;
+
+				element.toggleClass('liked');
+
+				if ( count <= 0 ){
+					element.find('.count').remove();
+					element.removeClass('has-count');
+				} else if ( element.find('.count').length > 0 ){
+					element.find('.count').text(count);
+				} else {
+					element.append('<span class="count">'+count+'</span>');
+					element.addClass('has-count');
+				}
+			});
+		});
 
 		// mobile
 		$('.hamburger-menu').on('click', function(e){
