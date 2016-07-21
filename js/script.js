@@ -164,6 +164,13 @@
 
 		sidebar_context();
 
+		// show more
+		$('.btn-more').on('click', function(){
+			var $target = $(this).closest('.sum-section-list');
+			$target.toggleClass('expand');
+		});
+
+
 		// mobile
 		$('.hamburger-menu').on('click', function(e){
 			e.preventDefault();

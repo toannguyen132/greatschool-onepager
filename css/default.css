@@ -7385,15 +7385,13 @@ h2, h3 {
   background-color: rgba(255, 255, 255, 0.5);
   vertical-align: middle;
   display: inline-block; }
-.school-header .detail-info .phone, .school-header .detail-info .link {
-  background-color: rgba(0, 0, 0, 0.24);
-  border-radius: 30px;
-  padding: 5px 10px; }
+.school-header .detail-info .link .link-round {
+  font-size: 8px; }
 .school-header .detail-info .link-round {
   background-color: rgba(0, 0, 0, 0.24);
-  height: 20px;
-  width: 20px;
-  line-height: 20px;
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
   vertical-align: middle;
   text-align: center;
   border-radius: 30px;
@@ -7551,7 +7549,8 @@ section.sec-white {
     border-bottom: 0; }
   .sum-section .btn.btn-full {
     color: #888889;
-    padding: 15px 20px; }
+    padding: 15px 20px;
+    outline: none; }
   .sum-section .sum-section-header {
     background: #F6F9FA;
     padding: 15px; }
@@ -7585,12 +7584,18 @@ section.sec-white {
     clear: both; }
   .sum-section-list .sum-section-item:hover {
     background-color: #fcfcfc; }
+    .sum-section-list .sum-section-item:hover .metric {
+      opacity: 1;
+      visibility: visible; }
+  .sum-section-list .sum-section-item .metric {
+    opacity: 0;
+    visibility: hidden; }
   @media screen and (min-width: 992px) {
     .sum-section-list .sum-section-item .col-heading, .sum-section-list .sum-section-item .col-content {
       width: 50%;
       float: left; } }
   .sum-section-list .sum-section-item .heading-wrapper {
-    width: 60%; }
+    width: 80%; }
   .sum-section-list .sum-section-item .title {
     font-weight: 600;
     font-size: 1.6rem;
@@ -7600,6 +7605,8 @@ section.sec-white {
     font-size: 1.2rem;
     color: #888889; }
   .sum-section-list .sum-section-item:last-child {
+    border-bottom: 0; }
+  .sum-section-list .sum-section-item:nth-child(3) {
     border-bottom: 0; }
   .sum-section-list .sum-section-item .below {
     font-size: 1.3rem;
@@ -7616,6 +7623,24 @@ section.sec-white {
       margin-left: 10px;
       margin-right: 10px;
       vertical-align: middle; }
+.sum-section-list .sum-section-more {
+  -webkit-transition: 300ms max-height;
+          transition: 300ms max-height;
+  max-height: 0px;
+  overflow: hidden; }
+.sum-section-list .btn-more .expanded {
+  display: none; }
+.sum-section-list .btn-more .collapsed {
+  display: inline; }
+.sum-section-list.expand .sum-section-more {
+  max-height: 500px;
+  overflow: hidden; }
+.sum-section-list.expand .sum-section-item:nth-child(3) {
+  border-bottom: 1px solid #D1DFE5; }
+.sum-section-list.expand .btn-more .expanded {
+  display: inline-block; }
+.sum-section-list.expand .btn-more .collapsed {
+  display: none; }
 
 .stat-summary .main-stat {
   font-weight: 700;
