@@ -7174,7 +7174,9 @@ h2, h3 {
   color: #0E94C7;
   vertical-align: middle;
   margin-top: 5px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  outline: none !important;
+  box-shadow: none; }
   .btn [class*="icon-"] {
     font-size: 1.2em;
     vertical-align: middle; }
@@ -7445,8 +7447,33 @@ h2, h3 {
       .school-header .school-info .statistic .score-mobile .stat-lbl {
         font-size: 1.2rem;
         color: #fff;
-        line-height: 1.5em; } }
+        line-height: 1.5em; }
+      .school-header .school-info .statistic .score-mobile {
+        vertical-align: top; }
+        .school-header .school-info .statistic .score-mobile > div {
+          display: inline-block;
+          vertical-align: top; }
+        .school-header .school-info .statistic .score-mobile .score {
+          text-align: left;
+          padding-right: 15px;
+          border-right: 1px solid #D1DFE5; }
+          .school-header .school-info .statistic .score-mobile .score .lbl {
+            text-align: right;
+            margin-left: 10px; }
+        .school-header .school-info .statistic .score-mobile .stat-review {
+          padding-left: 15px !important; }
+          .school-header .school-info .statistic .score-mobile .stat-review .stat-lbl {
+            float: none;
+            width: auto; }
+          .school-header .school-info .statistic .score-mobile .stat-review .stat-stars {
+            float: none;
+            width: auto; }
+          .school-header .school-info .statistic .score-mobile .stat-review .stars {
+            display: inline-block; } }
 
+@media screen and (max-width: 991px) {
+  .stat-item-mobile-1 {
+    margin-top: 20px; } }
 @media screen and (min-width: 992px) {
   .score-mobile {
     display: none !important; } }
@@ -7592,7 +7619,11 @@ section.sec-white {
 /** --------- SCHOOL SUMMARY --------- **/
 .school-summary .summary-box {
   margin-top: 70px;
-  padding: 30px 10px; }
+  padding: 30px 10px;
+  display: none; }
+  @media screen and (min-width: 992px) {
+    .school-summary .summary-box {
+      display: block; } }
   .school-summary .summary-box .col {
     padding-left: 30px;
     padding-right: 30px; }
@@ -7620,6 +7651,29 @@ section.sec-white {
   .school-summary .summary-box a {
     text-decoration: none;
     color: #0E81C7; }
+.school-summary .summary-box.summary-box-alt {
+  display: block;
+  border: 0;
+  background-color: transparent;
+  padding: 15px 15px;
+  margin-top: 0; }
+  @media screen and (min-width: 992px) {
+    .school-summary .summary-box.summary-box-alt {
+      display: none; } }
+.school-summary .summary-box-alt .more {
+  max-height: 0;
+  transition: 400ms all;
+  overflow: hidden; }
+.school-summary .summary-box-alt .btn {
+  display: block; }
+.school-summary .summary-box-alt .btn:before {
+  content: attr(data-expand);
+  display: inline-block; }
+.school-summary .summary-box-alt.expand .more {
+  max-height: 400px; }
+.school-summary .summary-box-alt.expand .btn:before {
+  content: attr(data-collapse);
+  display: inline-block; }
 
 .sum-section {
   margin-top: 50px;

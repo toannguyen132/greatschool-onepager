@@ -56,6 +56,8 @@ h2, h3{
 	vertical-align: middle;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	outline: none !important;
+	box-shadow: none;
 	[class*="icon-"]{
 		font-size: 1.2em;
 		vertical-align: middle;
@@ -302,8 +304,48 @@ $colors: (
 						line-height: 1.5em;
 					}
 				}
+
+				.score-mobile{
+					vertical-align: top;
+
+					> div{
+						display: inline-block;
+						vertical-align: top;
+					}
+
+					.score {
+						text-align: left;
+						padding-right: 15px;
+						border-right: 1px solid $border-color;
+						.lbl{
+							text-align: right;
+							margin-left: 10px;
+						}
+					}
+
+					.stat-review{
+						padding-left: 15px !important;
+						.stat-lbl{
+							float: none;
+							width: auto;
+						}
+						.stat-stars{
+							float: none;
+							width: auto;
+						}
+						.stars{
+							display: inline-block;
+						}
+					}
+				}
 			}
 		}
+	}
+}
+
+@media screen and (max-width: $screen-sm-max){
+	.stat-item-mobile-1{
+		margin-top: 20px;
 	}
 }
 
@@ -510,6 +552,10 @@ section.sec-white{
 	.summary-box{
 		margin-top: 70px;
 		padding: 30px 10px;
+		display: none;
+		@media screen and (min-width: $screen-md-min){
+			display: block;
+		}
 		.col{
 			padding-left: 30px;
 			padding-right: 30px;
@@ -544,6 +590,42 @@ section.sec-white{
 		a{
 			text-decoration: none;
 			color: $primary;
+		}
+	}
+
+	.summary-box.summary-box-alt{
+		display: block;
+		border: 0;
+		background-color: transparent;
+		padding: 15px 15px;
+		margin-top: 0;
+		@media screen and (min-width: $screen-md-min){
+			display: none;
+		}
+	}
+
+	.summary-box-alt{
+		.avail{
+
+		}
+		.more{
+			max-height: 0;
+			transition: 400ms all;
+			overflow: hidden;
+		}
+		.btn{
+			display: block;
+		}
+		.btn:before{
+			content: attr(data-expand);
+			display: inline-block;
+		}
+		&.expand{
+			.more{ max-height: 400px; }
+			.btn:before{
+				content: attr(data-collapse);
+				display: inline-block;
+			}
 		}
 	}
 }

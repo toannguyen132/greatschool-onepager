@@ -206,6 +206,17 @@
 			});
 		});
 
+		// summary box
+		$('.summary-box-alt').each(function(){
+			var $this = $(this);
+			var btn = $this.find('.btn');
+
+			btn.on('click', function(e){
+				console.log('av');
+				$this.toggleClass('expand');
+			});
+		});
+
 		// scroll 
 		$('.scroll-trigger').click(function(e){
 			e.preventDefault();
