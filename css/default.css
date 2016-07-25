@@ -7816,6 +7816,9 @@ section.sec-white {
     font-size: 1.6rem;
     color: #1C252E;
     margin-bottom: 5px; }
+    @media screen and (max-width: 991px) {
+      .sum-section-list .sum-section-item .title .btn {
+        display: none; } }
   .sum-section-list .sum-section-item .subtitle {
     font-size: 1.2rem;
     color: #888889; }
@@ -8458,7 +8461,8 @@ section.sec-rental {
     background: #EDF3F5;
     border: 1px solid #E4ECF0;
     padding: 20px 40px 20px 25px;
-    position: relative; }
+    position: relative;
+    z-index: 11; }
     .mobile-modal .modal-header .modal-title {
       font-weight: 600;
       font-size: 1.8rem;
@@ -8477,7 +8481,8 @@ section.sec-rental {
       opacity: 1; }
   .mobile-modal .modal-body {
     padding: 0;
-    background-color: #F6F9FA; }
+    background-color: #F6F9FA;
+    z-index: 10; }
     .mobile-modal .modal-body:after {
       content: "";
       display: block;
@@ -8486,7 +8491,8 @@ section.sec-rental {
     padding: 25px 25px 70px 25px;
     border: 0;
     border-radius: 0;
-    box-shadow: none; }
+    box-shadow: none;
+    height: 100%; }
     .mobile-modal .modal-content .graph-img {
       margin: 10px 0; }
     .mobile-modal .modal-content img {

@@ -798,6 +798,11 @@ section.sec-white{
 			font-size: 1.6rem;
 			color: $dark-gray;
 			margin-bottom: 5px;
+			@media screen and (max-width: $tablet-max){
+				.btn{
+					display: none;
+				}
+			}
 		}
 		.subtitle{
 			font-size: 1.2rem;
@@ -1617,6 +1622,7 @@ section.sec-rental{
 		border: 1px solid #E4ECF0;
 		padding: 20px 40px 20px 25px;
 		position: relative;
+		z-index: 11;
 		.modal-title{
 			font-weight: $text-bold;
 			font-size: 1.8rem;
@@ -1641,6 +1647,7 @@ section.sec-rental{
 	.modal-body{
 		padding: 0;
 		background-color: #F6F9FA;
+		z-index: 10;
 		&:after{
 			content: "";
 			display: block;
@@ -1652,6 +1659,7 @@ section.sec-rental{
 		border: 0;
 		border-radius: 0;
 		box-shadow: none;
+		height: 100%;
 
 		.graph-img{
 			margin: 10px 0;	

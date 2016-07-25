@@ -12,6 +12,8 @@
 			lng: -77.028333,
    			scrollwheel: false,
 		});
+		var windowHeight = $(window).height();
+		var isMobile = function(){ return $(window).width() <= 768;}
 
 		// tootip
 		$('.tlp').tooltipster({
@@ -20,13 +22,18 @@
 		});
 		var adjustTootip = function(){
 			if (Modernizr.touchevents)	{
-				$('.tlp').tooltipster('option', 'trigger', 'click');	
-				console.log('tét');
+				$('.tlp').tooltipster('option', 'trigger', 'click');
 			} else {
 				$('.tlp').tooltipster('option', 'trigger', 'mouseenter');
 			}
+			if (isMobile()){
+				$('.tooltip-chart').tooltipster('disable');
+			}else {
+				$('.tooltip-chart').tooltipster('enable');
+			}
 		};
 		$(window).resize(function(){setTimeout(adjustTootip, 10)});
+		$(window).resize(function(){setTimeout(function(){windowHeight = $(window).height();}, 10)});
 		setTimeout(adjustTootip, 10);
 		$('.tlp').click(function(e){
 			e.preventDefault();
@@ -35,6 +42,7 @@
 			content: $('#tootip_1').detach(),
 			contentCloning: true
 		});
+
 		// end tooltip
 
 		// modal trigger
@@ -58,8 +66,16 @@
 			$(this).addClass('active');
 			$(this).siblings().removeClass('active');
 		});
-
-		var isMobile = $(window).width() <= 768;
+		$('.mobile-modal').each(function(){
+			var $this = $(this);
+			var title = $this.find('.modal-header');
+			var body = $this.find('.modal-body');
+			var titleHeight = title.outerHeight(true);
+			var bodyHeight = windowHeight - titleHeight;
+			body.css({
+				'height': bodyHeight + 'px'
+			})
+		});
 
 		// sidebar
 		var sidebar_context = function(){
@@ -74,8 +90,7 @@
 			$('.floating-widget').css('width', $context.width() );
 			// console.log(offset);
 			var updateSidebar = function(){
-				if ( isMobile ) return;
-				console.log('abc');
+				if ( isMobile() ) return;
 
 				var top = $('body').scrollTop();
 				var pos_left = $context.parent().offset().left; // 15 is padding
