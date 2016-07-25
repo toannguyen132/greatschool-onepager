@@ -19,6 +19,9 @@ h2, h3{
 	font-family: "Roboto", serif;
 	font-weight: 700;
 }
+img{
+	max-width: 100%;
+}
 
 /* ----------- general ----------- */
 .hint-icon{
@@ -704,14 +707,18 @@ section.sec-white{
 		display: block;
 		border: 0;
 		background-color: transparent;
-		padding: 15px 15px;
-		margin-top: 0;
+		padding: 15px 0;
+		margin-top: -30px;
 		@media screen and (min-width: $screen-md-min){
 			display: none;
 		}
 	}
 
 	.summary-box-alt{
+		.sum-line{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 		.avail{
 
 		}
@@ -1226,6 +1233,22 @@ section.sec-white{
 .reviews-list{
 	@media screen and (max-width: $screen-sm-max){
 		margin-top: 40px;
+		margin-left: -15px;
+		margin-right: -15px;
+		width: 500vw;
+		&:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.review-item{
+			float: left;
+			display: block;
+			width: 100vw;
+			padding-left: 15px;
+			padding-right: 15px;
+			border-bottom: 0 !important;
+		}
 	}
 	.review-item{
 		padding-top: 30px;
@@ -1299,10 +1322,20 @@ section.sec-white{
 					display: block;
 					clear: both;
 				}
+				.actions{
+					text-align: center;
+					@media (min-width: $screen-md-min){
+						float: right;	
+						text-align: left;
+					}
+				}
 				.date{
 					color: #A7A7A7;
 					vertical-align: middle;
 					line-height: 40px;
+					@media (min-width: $screen-md-min){
+						float: left;	
+					}
 				}
 				.btn-sm{
 					font-weight: $text-bold;
@@ -1346,6 +1379,42 @@ section.sec-white{
 					color: #EA6549;
 				}
 			}
+		}
+	}
+}
+.review-footer{
+	height: 50px;
+	position: relative;
+	margin-left: -15px;
+	margin-right: -15px;
+	@include bt(1px, $border-color);
+	@include bb(1px, $border-color);
+	
+	.left-action, .right-action{
+		font-weight: $text-bold;
+		font-size: 12px;
+		color: #0E94C7;
+		vertical-align: middle;
+		line-height: 25px;
+		top: 11px;
+		position: absolute;
+	}
+	.left-action{
+		left: 15px;
+	}
+	.right-action{
+		right: 15px;
+	}
+	.paginator{
+		height: 50px;
+		padding: 10px 60px;
+		text-align: center;
+		line-height: 25px;
+		.paged{
+			display: inline-block;
+			border: 1px solid $border-color;
+			padding: 0 5px;
+			border-radius: 3px;
 		}
 	}
 }
