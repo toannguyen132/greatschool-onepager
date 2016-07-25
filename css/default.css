@@ -7328,6 +7328,9 @@ h2, h3 {
 @media screen and (min-width: 992px) {
   .hidden-desktop {
     display: none !important; } }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 100%; } }
 /* ----- summary ----- */
 .school-header {
   background-image: url("../img/header-bg.jpg");
@@ -8638,8 +8641,9 @@ header {
   z-index: 10; }
 
 @media screen and (min-width: 992px) {
-  .header-search #logo {
+  #logo {
     float: left; } }
+
 .header-search.header-desktop {
   float: right; }
 .header-search:after {
@@ -8672,6 +8676,9 @@ header {
     border-top: 1px solid #C1D2D9;
     border-bottom: 1px solid #C1D2D9;
     min-width: 300px; }
+    @media screen and (max-width: 1075px) {
+      .search-box .inp {
+        min-width: 200px; } }
     .search-box .inp input {
       display: block;
       width: 100%;
@@ -8692,7 +8699,8 @@ header {
   .header-nav ul {
     list-style: none;
     list-style-image: none;
-    list-style-position: outside; }
+    list-style-position: outside;
+    padding-left: 0; }
     .header-nav ul li {
       display: inline-block;
       padding-left: 15px;

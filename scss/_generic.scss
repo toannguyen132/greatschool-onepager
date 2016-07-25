@@ -146,6 +146,12 @@ $colors: (
 	}
 }
 
+@media (min-width: $screen-md) and (max-width: $screen-lg){
+	.container{
+		width: 100%;
+	}
+}
+
 /* ----- summary ----- */
 .school-header{
 	background-image: url("../img/header-bg.jpg");

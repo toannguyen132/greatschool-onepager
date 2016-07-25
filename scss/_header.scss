@@ -10,12 +10,13 @@ header{
   z-index: 10;
 }
 
-.header-search{
-  #logo{
-    @media screen and (min-width: $screen-md-min){
-      float: left;
-    }
+#logo{
+  @media screen and (min-width: $screen-md-min){
+    float: left;
   }
+}
+
+.header-search{
   &.header-desktop{
     float: right;
   }
@@ -36,6 +37,7 @@ header{
     height: 50px;
     vertical-align: top;
   }
+
   .cat{
     background-image: linear-gradient(-180deg, #FFFFFF 50%, #F3F9FA 100%);
     padding: $default-padding $default-padding*3 $default-padding $default-padding;
@@ -56,6 +58,9 @@ header{
     border-top: 1px solid #C1D2D9;
     border-bottom: 1px solid #C1D2D9;
     min-width: 300px;
+    @media screen and (max-width: 1075px){
+      min-width: 200px;
+    }
 
     input{
       display: block;
@@ -83,6 +88,7 @@ header{
     list-style: none;
     list-style-image: none;
     list-style-position: outside;
+    padding-left: 0;
     li{
       display: inline-block;
       padding-left: $default-padding;
