@@ -1383,6 +1383,10 @@ section.sec-white{
 	}
 }
 .review-footer{
+	@media (min-width: $screen-md-min){
+		display: none;
+	}
+	
 	height: 50px;
 	position: relative;
 	margin-left: -15px;

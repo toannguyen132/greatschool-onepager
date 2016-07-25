@@ -8273,6 +8273,9 @@ section.sec-white {
   margin-right: -15px;
   border-top: 1px solid #D1DFE5;
   border-bottom: 1px solid #D1DFE5; }
+  @media (min-width: 992px) {
+    .review-footer {
+      display: none; } }
   .review-footer .left-action, .review-footer .right-action {
     font-weight: 600;
     font-size: 12px;
