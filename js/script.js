@@ -206,6 +206,11 @@
 			});
 		});
 
+		$('.statistic-mobile .more-btn').on('click', function(){
+			var parent = $(this).closest('.stat-more');
+			parent.toggleClass('expand');
+		});
+
 		// summary box
 		$('.summary-box-alt').each(function(){
 			var $this = $(this);

@@ -7470,6 +7470,85 @@ h2, h3 {
             width: auto; }
           .school-header .school-info .statistic .score-mobile .stat-review .stars {
             display: inline-block; } }
+  @media screen and (min-width: 992px) {
+    .school-header .school-info .statistic-mobile {
+      display: none; } }
+  .school-header .school-info .statistic-mobile .hint-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    vertical-align: middle;
+    margin-top: -4px; }
+  .school-header .school-info .statistic-mobile .title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    line-height: 20px;
+    text-transform: uppercase; }
+  .school-header .school-info .statistic-mobile .stat-top:after {
+    content: "";
+    clear: both;
+    display: block; }
+  .school-header .school-info .statistic-mobile .stat-top .stat-top-left {
+    float: left;
+    width: 60%;
+    padding-right: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5); }
+  .school-header .school-info .statistic-mobile .stat-top .stat-top-right {
+    padding-left: 20px;
+    float: left;
+    width: 40%;
+    text-align: center; }
+  .school-header .school-info .statistic-mobile .stat-top .score-number {
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    background-color: #6BA822;
+    vertical-align: middle;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 33px;
+    font-size: 17px;
+    float: left; }
+  .school-header .school-info .statistic-mobile .stat-top .txt {
+    margin-left: 50px; }
+  .school-header .school-info .statistic-mobile .stat-top .stars {
+    font-size: 1.2rem; }
+  .school-header .school-info .statistic-mobile .more-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #05B9FF;
+    line-height: 19px; }
+  .school-header .school-info .statistic-mobile .stat-more {
+    margin-top: 20px; }
+    .school-header .school-info .statistic-mobile .stat-more.expand .stat-item {
+      display: block; }
+    .school-header .school-info .statistic-mobile .stat-more.expand .more-btn.more {
+      display: none; }
+    .school-header .school-info .statistic-mobile .stat-more.expand .more-btn.less {
+      display: block; }
+    .school-header .school-info .statistic-mobile .stat-more .more-btn.less {
+      display: none; }
+    .school-header .school-info .statistic-mobile .stat-more .stat-item {
+      display: none; }
+    .school-header .school-info .statistic-mobile .stat-more .title {
+      width: 60%;
+      float: left;
+      color: rgba(255, 255, 255, 0.5); }
+    .school-header .school-info .statistic-mobile .stat-more .value {
+      width: 40%;
+      float: left; }
+    .school-header .school-info .statistic-mobile .stat-more .stat-item {
+      font-size: 1.2rem;
+      padding: 3px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+      .school-header .school-info .statistic-mobile .stat-more .stat-item:after {
+        content: "";
+        display: block;
+        clear: both; }
 
 @media screen and (max-width: 991px) {
   .stat-item-mobile-1 {
