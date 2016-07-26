@@ -4,6 +4,8 @@
 
 (function($){
 	var map = null;
+	var windowHeight = $(window).height();
+	var isMobile = function(){ return $(window).width() <= 768;}
 	$(document).ready(function(){
 		// map
 		map = new GMaps({
@@ -12,8 +14,6 @@
 			lng: -77.028333,
    			scrollwheel: false,
 		});
-		var windowHeight = $(window).height();
-		var isMobile = function(){ return $(window).width() <= 768;}
 
 		// tootip
 		$('.tlp').tooltipster({
@@ -34,7 +34,13 @@
 		};
 		$(window).resize(function(){setTimeout(adjustTootip, 10)});
 		$(window).resize(function(){setTimeout(function(){windowHeight = $(window).height();}, 10)});
+
+		$(window).resize(function(){
+			setTimeout(updateNearbyHome, 10);
+		});
+		setTimeout(updateNearbyHome, 10);
 		setTimeout(adjustTootip, 10);
+
 		$('.tlp').click(function(e){
 			e.preventDefault();
 		})
@@ -278,6 +284,21 @@
 			open();
 		} else if ( action == 'close' ){
 			close();
+		}
+	}
+
+	// nearbyhome slide
+	var updateNearbyHome = function(){
+		var element = $('.rental-lists');
+		if (isMobile()){
+			element.slick({ 
+				arrows: false,
+				centerMode: true,
+				centerPadding: '40px',
+        		slidesToShow: 1
+			 });
+		} else {
+			element.slick('unslick');
 		}
 	}
 
