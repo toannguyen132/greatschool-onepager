@@ -7782,6 +7782,10 @@ section.sec-white {
   .sum-section .sum-section-header {
     background: #F6F9FA;
     padding: 15px; }
+    @media screen and (max-width: 991px) {
+      .sum-section .sum-section-header {
+        margin-left: -15px;
+        margin-right: -15px; } }
     .sum-section .sum-section-header .circle-number {
       display: inline-block;
       color: #fff;
@@ -7794,6 +7798,19 @@ section.sec-white {
       line-height: 50px;
       border-radius: 50px;
       font-size: 2.5rem; }
+      @media screen and (max-width: 991px) {
+        .sum-section .sum-section-header .circle-number {
+          display: inline-block;
+          color: #fff;
+          font-weight: 600;
+          text-align: center;
+          background-color: #48932D;
+          vertical-align: middle;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border-radius: 40px;
+          font-size: 2.4rem; } }
     .sum-section .sum-section-header .text {
       margin-left: 15px;
       text-transform: uppercase;
@@ -8147,6 +8164,11 @@ section.sec-white {
         height: 15px;
         margin-right: 10px; }
 
+@media (max-width: 991px) {
+  #reviews {
+    width: 100%;
+    overflow: hidden; } }
+
 @media screen and (max-width: 991px) {
   .reviews-list {
     margin-top: 40px;
@@ -8284,6 +8306,8 @@ section.sec-white {
     line-height: 25px;
     top: 11px;
     position: absolute; }
+    .review-footer .left-action.faded, .review-footer .right-action.faded {
+      opacity: 0.5; }
   .review-footer .left-action {
     left: 15px; }
   .review-footer .right-action {
@@ -8296,7 +8320,7 @@ section.sec-white {
     .review-footer .paginator .paged {
       display: inline-block;
       border: 1px solid #D1DFE5;
-      padding: 0 5px;
+      padding: 0 8px;
       border-radius: 3px; }
 
 .reviews-list-more {
@@ -8326,8 +8350,15 @@ section.sec-white {
     content: "";
     clear: both;
     display: block; }
+  @media (max-width: 767px) {
+    .photo-box {
+      text-align: center; } }
   .photo-box .thumb {
     text-align: center; }
+    @media (max-width: 767px) {
+      .photo-box .thumb img {
+        max-width: 70px;
+        margin-bottom: 30px; } }
   .photo-box .content {
     font-size: 1.6rem;
     color: #1C252E;
@@ -9033,9 +9064,6 @@ footer {
   line-height: 17px;
   padding: 70px 0;
   /** right **/ }
-  @media (max-width: 767px) {
-    footer {
-      text-align: center; } }
   footer .footer-about .logo {
     margin-bottom: 30px; }
   footer .footer-about .btn-signup {
@@ -9043,9 +9071,14 @@ footer {
     min-width: 120px; }
   @media (max-width: 991px) {
     footer .footer-about {
-      text-align: center; }
+      font-size: 1.3rem;
+      color: #FFFFFF;
+      line-height: 20px; }
       footer .footer-about .logo {
         width: 200px !important; } }
+  @media (max-width: 767px) {
+    footer .footer-about .logo {
+      width: 100px !important; } }
   footer .follow {
     margin-bottom: 15px; }
     footer .follow .widget-title {
@@ -9146,5 +9179,7 @@ footer {
     footer .tag:hover {
       text-decoration: none;
       background-color: #112336; }
+  footer .mobile-translate {
+    margin-bottom: 30px; }
 
 /*# sourceMappingURL=default.css.map */

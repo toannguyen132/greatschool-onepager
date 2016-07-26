@@ -759,8 +759,15 @@ section.sec-white{
 	.sum-section-header{
 		background: $light-background;
 		padding: 15px;
+		@media screen and (max-width: $tablet-max){
+			margin-left: -15px;
+			margin-right: -15px;
+		}
 		.circle-number{
 			@include circle-number($green, 50px, 2.5rem);
+			@media screen and (max-width: $tablet-max){
+				@include circle-number($green, 40px, 2.4rem);
+			}
 		}
 		.text{
 			margin-left: 15px;
@@ -1230,6 +1237,13 @@ section.sec-white{
 	}
 }
 
+#reviews{
+	@media (max-width: $tablet-max){
+		width: 100%;
+		overflow: hidden;
+	}
+}
+
 .reviews-list{
 	@media screen and (max-width: $screen-sm-max){
 		margin-top: 40px;
@@ -1402,6 +1416,9 @@ section.sec-white{
 		line-height: 25px;
 		top: 11px;
 		position: absolute;
+		&.faded{
+			opacity: 0.5;
+		}
 	}
 	.left-action{
 		left: 15px;
@@ -1417,7 +1434,7 @@ section.sec-white{
 		.paged{
 			display: inline-block;
 			border: 1px solid $border-color;
-			padding: 0 5px;
+			padding: 0 8px;
 			border-radius: 3px;
 		}
 	}
@@ -1453,10 +1470,16 @@ section.sec-white{
 		clear: both;
 		display: block;
 	}
+	@media (max-width: $mobile-max){
+		text-align: center;
+	}
 	.thumb{
 		text-align: center;
-		img{
-
+		@media (max-width: $mobile-max){
+			img{
+				max-width: 70px;
+				margin-bottom: 30px;
+			}
 		}
 	}
 	.content{

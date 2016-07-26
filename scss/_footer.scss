@@ -4,9 +4,6 @@ footer{
 	color: #AAB4BF;
 	line-height: 17px;
 	padding: 70px 0;
-	@media (max-width: $mobile-max){
-		text-align: center;
-	}
 
 	.footer-about{
 		.logo{
@@ -17,9 +14,16 @@ footer{
 			min-width: 120px;
 		}
 		@media (max-width: $tablet-max){
-			text-align: center;
+			font-size: 1.3rem;
+			color: #FFFFFF;
+			line-height: 20px;
 			.logo{
 				width: 200px !important;
+			}
+		}
+		@media (max-width: $mobile-max){
+			.logo{
+				width: 100px !important;
 			}
 		}
 	}
@@ -152,5 +156,10 @@ footer{
 			text-decoration: none;
 			background-color: darken(#12263A, 1%);
 		}
+	}
+
+
+	.mobile-translate{
+		margin-bottom: 30px;
 	}
 }
