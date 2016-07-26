@@ -296,7 +296,7 @@
 				centerMode: true,
 				centerPadding: '40px',
         		slidesToShow: 1
-			 });
+			});
 		} else {
 			element.slick('unslick');
 		}
